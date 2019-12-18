@@ -9,10 +9,26 @@ count_list = []
 cache = {}
 smallest = 100000
 
-class Robot():
-    def __init__(self, x, y):
+class Point:
+    def __init__(self, x, y, c):
         self.x_ = x
         self.y_ = y
+        self.name_ = c
+        self.opened_doors_ = []
+
+    def validPoint(c):
+        return ord(c) != ord('#')
+
+    def __eq__(self, other):
+        return self.name_ == other.name_
+
+class Crux(Point):
+    def __init__(self, x, y, c):
+        Point.__init__(self, x, y, c)
+
+class Robot(Crux):
+    def __init__(self, x, y):
+        Crux.__init__(self, x, y, '@')
 
     def isRobot(c):
         return ord(c) == ord('@')
@@ -20,23 +36,55 @@ class Robot():
     def __str__(self):
         return "Robot x<" + str(self.x_) + ">, y<" + str(self.y_) + ">"
 
-def isDoor(c):
-    return ord(c) >= ord('A') and ord(c) <= ord('Z')
+class Lock(Crux):
+    def __init__(self, x, y, c):
+        Crux.__init__(self, x, y, ord(c))
 
-def isLock(c):
-    return ord(c) >= ord('a') and ord(c) <= ord('z')
+    def isLock(c):
+        return ord(c) >= ord('a') and ord(c) <= ord('z')
 
-def findAll():
+    def __str__(self):
+        return "Lock x<" + str(self.x_) + ">, y<" + str(self.y_) + ">, c<" + chr(self.name_) + ">"
+
+class Door(Point):
+    def __init__(self, x, y, c):
+        Point.__init__(self, x, y, ord(c))
+
+    def isDoor(c):
+        return ord(c) >= ord('A') and ord(c) <= ord('Z')
+
+    def __str__(self):
+        return "Door x<" + str(self.x_) + ">, y<" + str(self.y_) + ">, c<" + chr(self.name_) + ">"
+
+class Path:
+    def __init__(self, point1):
+        self.point1_ = point1
+        self.doors_ = []
+
+    def addPoint2(self, point2, count):
+        self.point2_ = point2
+        self.count_ = count
+
+    def addDoor(self, door):
+        self.doors_.append(door)
+
+    def __str__(self):
+        string = "point1 <" + str(self.point1_) + ">, point2 <" + str(self.point2_) + ">, count <" + str(self.count_) + ">\n"
+        for door in self.doors_:
+            string += "  door <" + str(door) + ">\n"
+        return string[:-1]
+
+def findRobot():
     global map
     global robot
     x = 0
     y = 0
     for row in map:
         for c in row:
-            if isLock(c):
+            if Lock.isLock(c):
                 print("lock <" + str(c) + ">, x <" + str(x) + ">, y <" + str(y) + ">")
                 locks[c] = [x,y]
-            if isDoor(c):
+            if Door.isDoor(c):
                 print("door <" + str(c) + ">, x <" + str(x) + ">, y <" + str(y) + ">")
                 doors[c] = [x,y]
             if Robot.isRobot(c):
@@ -91,7 +139,7 @@ def recursive(map, mask, x, y, count, list, used_keys, open_doors):
             # print("    used_keys <" + str(used_keys) + ">")
             # print("    open_doors <" + str(open_doors) + ">")
             # print("    C <" + str(C) + "> or c <" + str(c) + "> not in list")
-            if isLock(c) == True:
+            if Lock.isLock(c) == True:
                 list.append([count, c])
                 return
             else:
@@ -163,7 +211,7 @@ def main():
     global map
     global smallest
     readInput()
-    findAll()
+    findRobot()
     printMap(map)
     getMaps(map)
     print(smallest)
