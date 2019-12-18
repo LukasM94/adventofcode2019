@@ -1,0 +1,453 @@
+==============print=reactions====
+lhs [['171', 'ORE']], rhs ['8', 'CNZTR']
+lhs [['7', 'ZLQW'], ['3', 'BMBT'], ['9', 'XCVML'], ['26', 'XMNCP'], ['1', 'WPTQ'], ['2', 'MZWV'], ['1', 'RJRHP']], rhs ['4', 'PLWSL']
+lhs [['114', 'ORE']], rhs ['4', 'BHXH']
+lhs [['14', 'VRPVC']], rhs ['6', 'BMBT']
+lhs [['6', 'BHXH'], ['18', 'KTJDG'], ['12', 'WPTQ'], ['7', 'PLWSL'], ['31', 'FHTLT'], ['37', 'ZDVW']], rhs ['1', 'FUEL']
+lhs [['6', 'WPTQ'], ['2', 'BMBT'], ['8', 'ZLQW'], ['18', 'KTJDG'], ['1', 'XMNCP'], ['6', 'MZWV'], ['1', 'RJRHP']], rhs ['6', 'FHTLT']
+lhs [['15', 'XDBXC'], ['2', 'LTCX'], ['1', 'VRPVC']], rhs ['6', 'ZLQW']
+lhs [['13', 'WPTQ'], ['10', 'LTCX'], ['3', 'RJRHP'], ['14', 'XMNCP'], ['2', 'MZWV'], ['1', 'ZLQW']], rhs ['1', 'ZDVW']
+lhs [['5', 'BMBT']], rhs ['4', 'WPTQ']
+lhs [['189', 'ORE']], rhs ['9', 'KTJDG']
+lhs [['1', 'MZWV'], ['17', 'XDBXC'], ['3', 'XCVML']], rhs ['2', 'XMNCP']
+lhs [['12', 'VRPVC'], ['27', 'CNZTR']], rhs ['2', 'XDBXC']
+lhs [['15', 'KTJDG'], ['12', 'BHXH']], rhs ['5', 'XCVML']
+lhs [['3', 'BHXH'], ['2', 'VRPVC']], rhs ['7', 'MZWV']
+lhs [['121', 'ORE']], rhs ['7', 'VRPVC']
+lhs [['7', 'XCVML']], rhs ['6', 'RJRHP']
+lhs [['5', 'BHXH'], ['4', 'VRPVC']], rhs ['5', 'LTCX']
+==============print=reserved=====
+==============print=end============
+recursive(FUEL, 1)
+start
+lhs [['6', 'BHXH'], ['18', 'KTJDG'], ['12', 'WPTQ'], ['7', 'PLWSL'], ['31', 'FHTLT'], ['37', 'ZDVW']], rhs ['1', 'FUEL']
+==============start=loop=========
+contains [6, 'BHXH']
+contains [18, 'KTJDG']
+contains [12, 'WPTQ']
+not contains [7, 'PLWSL']
+not contains [31, 'FHTLT']
+not contains [37, 'ZDVW']
+recursive(PLWSL, 7)
+start
+lhs [['7', 'ZLQW'], ['3', 'BMBT'], ['9', 'XCVML'], ['26', 'XMNCP'], ['1', 'WPTQ'], ['2', 'MZWV'], ['1', 'RJRHP']], rhs ['4', 'PLWSL']
+==============start=loop=========
+contains [14, 'ZLQW']
+contains [6, 'BMBT']
+contains [18, 'XCVML']
+contains [52, 'XMNCP']
+contains [2, 'WPTQ']
+contains [4, 'MZWV']
+contains [2, 'RJRHP']
+==============end=loop===========
+lhs [[14, 'ZLQW'], [6, 'BMBT'], [18, 'XCVML'], [52, 'XMNCP'], [2, 'WPTQ'], [4, 'MZWV'], [2, 'RJRHP']], rhs ['4', 'PLWSL']
+done
+==============print=reactions====
+lhs [['171', 'ORE']], rhs ['8', 'CNZTR']
+lhs [['114', 'ORE']], rhs ['4', 'BHXH']
+lhs [['14', 'VRPVC']], rhs ['6', 'BMBT']
+lhs [['6', 'WPTQ'], ['2', 'BMBT'], ['8', 'ZLQW'], ['18', 'KTJDG'], ['1', 'XMNCP'], ['6', 'MZWV'], ['1', 'RJRHP']], rhs ['6', 'FHTLT']
+lhs [['15', 'XDBXC'], ['2', 'LTCX'], ['1', 'VRPVC']], rhs ['6', 'ZLQW']
+lhs [['13', 'WPTQ'], ['10', 'LTCX'], ['3', 'RJRHP'], ['14', 'XMNCP'], ['2', 'MZWV'], ['1', 'ZLQW']], rhs ['1', 'ZDVW']
+lhs [['5', 'BMBT']], rhs ['4', 'WPTQ']
+lhs [['189', 'ORE']], rhs ['9', 'KTJDG']
+lhs [['1', 'MZWV'], ['17', 'XDBXC'], ['3', 'XCVML']], rhs ['2', 'XMNCP']
+lhs [['12', 'VRPVC'], ['27', 'CNZTR']], rhs ['2', 'XDBXC']
+lhs [['15', 'KTJDG'], ['12', 'BHXH']], rhs ['5', 'XCVML']
+lhs [['3', 'BHXH'], ['2', 'VRPVC']], rhs ['7', 'MZWV']
+lhs [['121', 'ORE']], rhs ['7', 'VRPVC']
+lhs [['7', 'XCVML']], rhs ['6', 'RJRHP']
+lhs [['5', 'BHXH'], ['4', 'VRPVC']], rhs ['5', 'LTCX']
+==============print=reserved=====
+[6, 'BHXH']
+[18, 'KTJDG']
+[14, 'WPTQ']
+[14, 'ZLQW']
+[6, 'BMBT']
+[18, 'XCVML']
+[52, 'XMNCP']
+[4, 'MZWV']
+[2, 'RJRHP']
+==============print=end============
+recursive(FHTLT, 31)
+start
+lhs [['6', 'WPTQ'], ['2', 'BMBT'], ['8', 'ZLQW'], ['18', 'KTJDG'], ['1', 'XMNCP'], ['6', 'MZWV'], ['1', 'RJRHP']], rhs ['6', 'FHTLT']
+==============start=loop=========
+contains [36, 'WPTQ']
+contains [12, 'BMBT']
+contains [48, 'ZLQW']
+contains [108, 'KTJDG']
+contains [6, 'XMNCP']
+contains [36, 'MZWV']
+contains [6, 'RJRHP']
+==============end=loop===========
+lhs [[36, 'WPTQ'], [12, 'BMBT'], [48, 'ZLQW'], [108, 'KTJDG'], [6, 'XMNCP'], [36, 'MZWV'], [6, 'RJRHP']], rhs ['6', 'FHTLT']
+done
+==============print=reactions====
+lhs [['171', 'ORE']], rhs ['8', 'CNZTR']
+lhs [['114', 'ORE']], rhs ['4', 'BHXH']
+lhs [['14', 'VRPVC']], rhs ['6', 'BMBT']
+lhs [['15', 'XDBXC'], ['2', 'LTCX'], ['1', 'VRPVC']], rhs ['6', 'ZLQW']
+lhs [['13', 'WPTQ'], ['10', 'LTCX'], ['3', 'RJRHP'], ['14', 'XMNCP'], ['2', 'MZWV'], ['1', 'ZLQW']], rhs ['1', 'ZDVW']
+lhs [['5', 'BMBT']], rhs ['4', 'WPTQ']
+lhs [['189', 'ORE']], rhs ['9', 'KTJDG']
+lhs [['1', 'MZWV'], ['17', 'XDBXC'], ['3', 'XCVML']], rhs ['2', 'XMNCP']
+lhs [['12', 'VRPVC'], ['27', 'CNZTR']], rhs ['2', 'XDBXC']
+lhs [['15', 'KTJDG'], ['12', 'BHXH']], rhs ['5', 'XCVML']
+lhs [['3', 'BHXH'], ['2', 'VRPVC']], rhs ['7', 'MZWV']
+lhs [['121', 'ORE']], rhs ['7', 'VRPVC']
+lhs [['7', 'XCVML']], rhs ['6', 'RJRHP']
+lhs [['5', 'BHXH'], ['4', 'VRPVC']], rhs ['5', 'LTCX']
+==============print=reserved=====
+[6, 'BHXH']
+[126, 'KTJDG']
+[50, 'WPTQ']
+[62, 'ZLQW']
+[18, 'BMBT']
+[18, 'XCVML']
+[58, 'XMNCP']
+[40, 'MZWV']
+[8, 'RJRHP']
+==============print=end============
+recursive(ZDVW, 37)
+start
+lhs [['13', 'WPTQ'], ['10', 'LTCX'], ['3', 'RJRHP'], ['14', 'XMNCP'], ['2', 'MZWV'], ['1', 'ZLQW']], rhs ['1', 'ZDVW']
+==============start=loop=========
+not contains [481, 'WPTQ']
+contains [370, 'LTCX']
+not contains [111, 'RJRHP']
+not contains [518, 'XMNCP']
+contains [74, 'MZWV']
+not contains [37, 'ZLQW']
+recursive(WPTQ, 531)
+start
+lhs [['5', 'BMBT']], rhs ['4', 'WPTQ']
+==============start=loop=========
+not contains [665, 'BMBT']
+recursive(BMBT, 683)
+start
+lhs [['14', 'VRPVC']], rhs ['6', 'BMBT']
+==============start=loop=========
+contains [1596, 'VRPVC']
+==============end=loop===========
+lhs [[1596, 'VRPVC']], rhs ['6', 'BMBT']
+done
+==============print=reactions====
+lhs [['171', 'ORE']], rhs ['8', 'CNZTR']
+lhs [['114', 'ORE']], rhs ['4', 'BHXH']
+lhs [['15', 'XDBXC'], ['2', 'LTCX'], ['1', 'VRPVC']], rhs ['6', 'ZLQW']
+lhs [['189', 'ORE']], rhs ['9', 'KTJDG']
+lhs [['1', 'MZWV'], ['17', 'XDBXC'], ['3', 'XCVML']], rhs ['2', 'XMNCP']
+lhs [['12', 'VRPVC'], ['27', 'CNZTR']], rhs ['2', 'XDBXC']
+lhs [['15', 'KTJDG'], ['12', 'BHXH']], rhs ['5', 'XCVML']
+lhs [['3', 'BHXH'], ['2', 'VRPVC']], rhs ['7', 'MZWV']
+lhs [['121', 'ORE']], rhs ['7', 'VRPVC']
+lhs [['7', 'XCVML']], rhs ['6', 'RJRHP']
+lhs [['5', 'BHXH'], ['4', 'VRPVC']], rhs ['5', 'LTCX']
+==============print=reserved=====
+[6, 'BHXH']
+[126, 'KTJDG']
+[531, 'WPTQ']
+[99, 'ZLQW']
+[683, 'BMBT']
+[18, 'XCVML']
+[576, 'XMNCP']
+[114, 'MZWV']
+[119, 'RJRHP']
+[370, 'LTCX']
+[1596, 'VRPVC']
+==============print=end============
+==============end=loop===========
+lhs [[683, 'BMBT']], rhs ['4', 'WPTQ']
+done
+==============print=reactions====
+lhs [['171', 'ORE']], rhs ['8', 'CNZTR']
+lhs [['114', 'ORE']], rhs ['4', 'BHXH']
+lhs [['15', 'XDBXC'], ['2', 'LTCX'], ['1', 'VRPVC']], rhs ['6', 'ZLQW']
+lhs [['189', 'ORE']], rhs ['9', 'KTJDG']
+lhs [['1', 'MZWV'], ['17', 'XDBXC'], ['3', 'XCVML']], rhs ['2', 'XMNCP']
+lhs [['12', 'VRPVC'], ['27', 'CNZTR']], rhs ['2', 'XDBXC']
+lhs [['15', 'KTJDG'], ['12', 'BHXH']], rhs ['5', 'XCVML']
+lhs [['3', 'BHXH'], ['2', 'VRPVC']], rhs ['7', 'MZWV']
+lhs [['121', 'ORE']], rhs ['7', 'VRPVC']
+lhs [['7', 'XCVML']], rhs ['6', 'RJRHP']
+lhs [['5', 'BHXH'], ['4', 'VRPVC']], rhs ['5', 'LTCX']
+==============print=reserved=====
+[6, 'BHXH']
+[126, 'KTJDG']
+[531, 'WPTQ']
+[99, 'ZLQW']
+[683, 'BMBT']
+[18, 'XCVML']
+[576, 'XMNCP']
+[114, 'MZWV']
+[119, 'RJRHP']
+[370, 'LTCX']
+[1596, 'VRPVC']
+==============print=end============
+recursive(RJRHP, 119)
+start
+lhs [['7', 'XCVML']], rhs ['6', 'RJRHP']
+==============start=loop=========
+contains [140, 'XCVML']
+==============end=loop===========
+lhs [[140, 'XCVML']], rhs ['6', 'RJRHP']
+done
+==============print=reactions====
+lhs [['171', 'ORE']], rhs ['8', 'CNZTR']
+lhs [['114', 'ORE']], rhs ['4', 'BHXH']
+lhs [['15', 'XDBXC'], ['2', 'LTCX'], ['1', 'VRPVC']], rhs ['6', 'ZLQW']
+lhs [['189', 'ORE']], rhs ['9', 'KTJDG']
+lhs [['1', 'MZWV'], ['17', 'XDBXC'], ['3', 'XCVML']], rhs ['2', 'XMNCP']
+lhs [['12', 'VRPVC'], ['27', 'CNZTR']], rhs ['2', 'XDBXC']
+lhs [['15', 'KTJDG'], ['12', 'BHXH']], rhs ['5', 'XCVML']
+lhs [['3', 'BHXH'], ['2', 'VRPVC']], rhs ['7', 'MZWV']
+lhs [['121', 'ORE']], rhs ['7', 'VRPVC']
+lhs [['5', 'BHXH'], ['4', 'VRPVC']], rhs ['5', 'LTCX']
+==============print=reserved=====
+[6, 'BHXH']
+[126, 'KTJDG']
+[531, 'WPTQ']
+[99, 'ZLQW']
+[683, 'BMBT']
+[158, 'XCVML']
+[576, 'XMNCP']
+[114, 'MZWV']
+[119, 'RJRHP']
+[370, 'LTCX']
+[1596, 'VRPVC']
+==============print=end============
+recursive(XMNCP, 576)
+start
+lhs [['1', 'MZWV'], ['17', 'XDBXC'], ['3', 'XCVML']], rhs ['2', 'XMNCP']
+==============start=loop=========
+not contains [288, 'MZWV']
+contains [4896, 'XDBXC']
+not contains [864, 'XCVML']
+recursive(MZWV, 402)
+start
+lhs [['3', 'BHXH'], ['2', 'VRPVC']], rhs ['7', 'MZWV']
+==============start=loop=========
+contains [174, 'BHXH']
+contains [116, 'VRPVC']
+==============end=loop===========
+lhs [[174, 'BHXH'], [116, 'VRPVC']], rhs ['7', 'MZWV']
+done
+==============print=reactions====
+lhs [['171', 'ORE']], rhs ['8', 'CNZTR']
+lhs [['114', 'ORE']], rhs ['4', 'BHXH']
+lhs [['15', 'XDBXC'], ['2', 'LTCX'], ['1', 'VRPVC']], rhs ['6', 'ZLQW']
+lhs [['189', 'ORE']], rhs ['9', 'KTJDG']
+lhs [['12', 'VRPVC'], ['27', 'CNZTR']], rhs ['2', 'XDBXC']
+lhs [['15', 'KTJDG'], ['12', 'BHXH']], rhs ['5', 'XCVML']
+lhs [['121', 'ORE']], rhs ['7', 'VRPVC']
+lhs [['5', 'BHXH'], ['4', 'VRPVC']], rhs ['5', 'LTCX']
+==============print=reserved=====
+[180, 'BHXH']
+[126, 'KTJDG']
+[531, 'WPTQ']
+[99, 'ZLQW']
+[683, 'BMBT']
+[1022, 'XCVML']
+[576, 'XMNCP']
+[402, 'MZWV']
+[119, 'RJRHP']
+[370, 'LTCX']
+[1712, 'VRPVC']
+[4896, 'XDBXC']
+==============print=end============
+recursive(XCVML, 1022)
+start
+lhs [['15', 'KTJDG'], ['12', 'BHXH']], rhs ['5', 'XCVML']
+==============start=loop=========
+not contains [3075, 'KTJDG']
+contains [2460, 'BHXH']
+recursive(KTJDG, 3201)
+count = 3201
+==============end=loop===========
+lhs [[3201, 'KTJDG'], [2460, 'BHXH']], rhs ['5', 'XCVML']
+done
+==============print=reactions====
+lhs [['171', 'ORE']], rhs ['8', 'CNZTR']
+lhs [['114', 'ORE']], rhs ['4', 'BHXH']
+lhs [['15', 'XDBXC'], ['2', 'LTCX'], ['1', 'VRPVC']], rhs ['6', 'ZLQW']
+lhs [['189', 'ORE']], rhs ['9', 'KTJDG']
+lhs [['12', 'VRPVC'], ['27', 'CNZTR']], rhs ['2', 'XDBXC']
+lhs [['121', 'ORE']], rhs ['7', 'VRPVC']
+lhs [['5', 'BHXH'], ['4', 'VRPVC']], rhs ['5', 'LTCX']
+==============print=reserved=====
+[2640, 'BHXH']
+[3201, 'KTJDG']
+[531, 'WPTQ']
+[99, 'ZLQW']
+[683, 'BMBT']
+[1022, 'XCVML']
+[576, 'XMNCP']
+[402, 'MZWV']
+[119, 'RJRHP']
+[370, 'LTCX']
+[1712, 'VRPVC']
+[4896, 'XDBXC']
+==============print=end============
+==============end=loop===========
+lhs [[402, 'MZWV'], [4896, 'XDBXC'], [1022, 'XCVML']], rhs ['2', 'XMNCP']
+done
+==============print=reactions====
+lhs [['171', 'ORE']], rhs ['8', 'CNZTR']
+lhs [['114', 'ORE']], rhs ['4', 'BHXH']
+lhs [['15', 'XDBXC'], ['2', 'LTCX'], ['1', 'VRPVC']], rhs ['6', 'ZLQW']
+lhs [['189', 'ORE']], rhs ['9', 'KTJDG']
+lhs [['12', 'VRPVC'], ['27', 'CNZTR']], rhs ['2', 'XDBXC']
+lhs [['121', 'ORE']], rhs ['7', 'VRPVC']
+lhs [['5', 'BHXH'], ['4', 'VRPVC']], rhs ['5', 'LTCX']
+==============print=reserved=====
+[2640, 'BHXH']
+[3201, 'KTJDG']
+[531, 'WPTQ']
+[99, 'ZLQW']
+[683, 'BMBT']
+[1022, 'XCVML']
+[576, 'XMNCP']
+[402, 'MZWV']
+[119, 'RJRHP']
+[370, 'LTCX']
+[1712, 'VRPVC']
+[4896, 'XDBXC']
+==============print=end============
+recursive(ZLQW, 99)
+start
+lhs [['15', 'XDBXC'], ['2', 'LTCX'], ['1', 'VRPVC']], rhs ['6', 'ZLQW']
+==============start=loop=========
+not contains [255, 'XDBXC']
+not contains [34, 'LTCX']
+contains [17, 'VRPVC']
+recursive(XDBXC, 5151)
+start
+lhs [['12', 'VRPVC'], ['27', 'CNZTR']], rhs ['2', 'XDBXC']
+==============start=loop=========
+contains [30912, 'VRPVC']
+not contains [69552, 'CNZTR']
+recursive(CNZTR, 69552)
+count = 69552
+==============end=loop===========
+lhs [[30912, 'VRPVC'], [69552, 'CNZTR']], rhs ['2', 'XDBXC']
+done
+==============print=reactions====
+lhs [['171', 'ORE']], rhs ['8', 'CNZTR']
+lhs [['114', 'ORE']], rhs ['4', 'BHXH']
+lhs [['189', 'ORE']], rhs ['9', 'KTJDG']
+lhs [['121', 'ORE']], rhs ['7', 'VRPVC']
+lhs [['5', 'BHXH'], ['4', 'VRPVC']], rhs ['5', 'LTCX']
+==============print=reserved=====
+[2640, 'BHXH']
+[3201, 'KTJDG']
+[531, 'WPTQ']
+[99, 'ZLQW']
+[683, 'BMBT']
+[1022, 'XCVML']
+[576, 'XMNCP']
+[402, 'MZWV']
+[119, 'RJRHP']
+[404, 'LTCX']
+[32641, 'VRPVC']
+[5151, 'XDBXC']
+==============print=end============
+recursive(LTCX, 404)
+start
+lhs [['5', 'BHXH'], ['4', 'VRPVC']], rhs ['5', 'LTCX']
+==============start=loop=========
+not contains [405, 'BHXH']
+not contains [324, 'VRPVC']
+recursive(BHXH, 3045)
+count = 3045
+recursive(VRPVC, 32965)
+count = 32965
+==============end=loop===========
+lhs [[3045, 'BHXH'], [32965, 'VRPVC']], rhs ['5', 'LTCX']
+done
+==============print=reactions====
+lhs [['171', 'ORE']], rhs ['8', 'CNZTR']
+lhs [['114', 'ORE']], rhs ['4', 'BHXH']
+lhs [['189', 'ORE']], rhs ['9', 'KTJDG']
+lhs [['121', 'ORE']], rhs ['7', 'VRPVC']
+==============print=reserved=====
+[3045, 'BHXH']
+[3201, 'KTJDG']
+[531, 'WPTQ']
+[99, 'ZLQW']
+[683, 'BMBT']
+[1022, 'XCVML']
+[576, 'XMNCP']
+[402, 'MZWV']
+[119, 'RJRHP']
+[404, 'LTCX']
+[32965, 'VRPVC']
+[5151, 'XDBXC']
+==============print=end============
+==============end=loop===========
+lhs [[5151, 'XDBXC'], [404, 'LTCX'], [17, 'VRPVC']], rhs ['6', 'ZLQW']
+done
+==============print=reactions====
+lhs [['171', 'ORE']], rhs ['8', 'CNZTR']
+lhs [['114', 'ORE']], rhs ['4', 'BHXH']
+lhs [['189', 'ORE']], rhs ['9', 'KTJDG']
+lhs [['121', 'ORE']], rhs ['7', 'VRPVC']
+==============print=reserved=====
+[3045, 'BHXH']
+[3201, 'KTJDG']
+[531, 'WPTQ']
+[99, 'ZLQW']
+[683, 'BMBT']
+[1022, 'XCVML']
+[576, 'XMNCP']
+[402, 'MZWV']
+[119, 'RJRHP']
+[404, 'LTCX']
+[32965, 'VRPVC']
+[5151, 'XDBXC']
+==============print=end============
+==============end=loop===========
+lhs [[531, 'WPTQ'], [370, 'LTCX'], [119, 'RJRHP'], [576, 'XMNCP'], [74, 'MZWV'], [99, 'ZLQW']], rhs ['1', 'ZDVW']
+done
+==============print=reactions====
+lhs [['171', 'ORE']], rhs ['8', 'CNZTR']
+lhs [['114', 'ORE']], rhs ['4', 'BHXH']
+lhs [['189', 'ORE']], rhs ['9', 'KTJDG']
+lhs [['121', 'ORE']], rhs ['7', 'VRPVC']
+==============print=reserved=====
+[3045, 'BHXH']
+[3201, 'KTJDG']
+[531, 'WPTQ']
+[99, 'ZLQW']
+[683, 'BMBT']
+[1022, 'XCVML']
+[576, 'XMNCP']
+[402, 'MZWV']
+[119, 'RJRHP']
+[404, 'LTCX']
+[32965, 'VRPVC']
+[5151, 'XDBXC']
+==============print=end============
+==============end=loop===========
+lhs [[6, 'BHXH'], [18, 'KTJDG'], [12, 'WPTQ'], [7, 'PLWSL'], [31, 'FHTLT'], [37, 'ZDVW']], rhs ['1', 'FUEL']
+done
+==============print=reactions====
+lhs [['171', 'ORE']], rhs ['8', 'CNZTR']
+lhs [['114', 'ORE']], rhs ['4', 'BHXH']
+lhs [['189', 'ORE']], rhs ['9', 'KTJDG']
+lhs [['121', 'ORE']], rhs ['7', 'VRPVC']
+==============print=reserved=====
+[3045, 'BHXH']
+[3201, 'KTJDG']
+[531, 'WPTQ']
+[99, 'ZLQW']
+[683, 'BMBT']
+[1022, 'XCVML']
+[576, 'XMNCP']
+[402, 'MZWV']
+[119, 'RJRHP']
+[404, 'LTCX']
+[32965, 'VRPVC']
+[5151, 'XDBXC']
+==============print=end============
+2210736

@@ -1,0 +1,1916 @@
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                  D                                                 
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+dir <1>, result <1>, x<0>, y<0>
+dir <1>, result <1>, x<0>, y<-1>
+dir <3>, result <1>, x<0>, y<-2>
+dir <3>, result <1>, x<-1>, y<-2>
+dir <3>, result <1>, x<-2>, y<-2>
+dir <3>, result <1>, x<-3>, y<-2>
+dir <2>, result <1>, x<-4>, y<-2>
+dir <2>, result <1>, x<-4>, y<-1>
+dir <3>, result <1>, x<-4>, y<0>
+dir <3>, result <1>, x<-5>, y<0>
+dir <3>, result <1>, x<-6>, y<0>
+dir <3>, result <1>, x<-7>, y<0>
+dir <2>, result <1>, x<-8>, y<0>
+dir <2>, result <1>, x<-8>, y<1>
+dir <2>, result <1>, x<-8>, y<2>
+dir <2>, result <1>, x<-8>, y<3>
+dir <2>, result <1>, x<-8>, y<4>
+dir <2>, result <1>, x<-8>, y<5>
+dir <2>, result <1>, x<-8>, y<6>
+dir <2>, result <1>, x<-8>, y<7>
+dir <4>, result <1>, x<-8>, y<8>
+dir <4>, result <1>, x<-7>, y<8>
+dir <1>, result <1>, x<-6>, y<8>
+dir <1>, result <1>, x<-6>, y<7>
+dir <1>, result <1>, x<-6>, y<6>
+dir <1>, result <1>, x<-6>, y<5>
+dir <1>, result <1>, x<-6>, y<4>
+dir <1>, result <1>, x<-6>, y<3>
+dir <4>, result <1>, x<-6>, y<2>
+dir <4>, result <1>, x<-5>, y<2>
+dir <2>, result <1>, x<-4>, y<2>
+dir <2>, result <1>, x<-4>, y<3>
+dir <4>, result <1>, x<-4>, y<4>
+dir <4>, result <1>, x<-3>, y<4>
+dir <2>, result <1>, x<-2>, y<4>
+dir <2>, result <1>, x<-2>, y<5>
+dir <2>, result <1>, x<-2>, y<6>
+dir <2>, result <1>, x<-2>, y<7>
+dir <3>, result <1>, x<-2>, y<8>
+dir <3>, result <1>, x<-3>, y<8>
+dir <2>, result <1>, x<-4>, y<8>
+dir <2>, result <1>, x<-4>, y<9>
+dir <2>, result <1>, x<-4>, y<10>
+dir <2>, result <1>, x<-4>, y<11>
+dir <2>, result <1>, x<-4>, y<12>
+dir <2>, result <1>, x<-4>, y<13>
+dir <4>, result <1>, x<-4>, y<14>
+dir <4>, result <1>, x<-3>, y<14>
+dir <2>, result <1>, x<-2>, y<14>
+dir <2>, result <1>, x<-2>, y<15>
+dir <3>, result <1>, x<-2>, y<16>
+dir <3>, result <1>, x<-3>, y<16>
+dir <3>, result <1>, x<-4>, y<16>
+dir <3>, result <1>, x<-5>, y<16>
+dir <3>, result <1>, x<-6>, y<16>
+dir <3>, result <1>, x<-7>, y<16>
+dir <2>, result <1>, x<-8>, y<16>
+dir <2>, result <1>, x<-8>, y<17>
+dir <4>, result <1>, x<-8>, y<18>
+dir <4>, result <1>, x<-7>, y<18>
+dir <4>, result <1>, x<-6>, y<18>
+dir <4>, result <1>, x<-5>, y<18>
+dir <4>, result <1>, x<-4>, y<18>
+dir <4>, result <1>, x<-3>, y<18>
+dir <4>, result <1>, x<-2>, y<18>
+dir <4>, result <1>, x<-1>, y<18>
+dir <1>, result <1>, x<0>, y<18>
+dir <1>, result <1>, x<0>, y<17>
+dir <4>, result <1>, x<0>, y<16>
+dir <4>, result <1>, x<1>, y<16>
+dir <1>, result <1>, x<2>, y<16>
+dir <1>, result <1>, x<2>, y<15>
+dir <1>, result <1>, x<2>, y<14>
+dir <1>, result <1>, x<2>, y<13>
+dir <4>, result <1>, x<2>, y<12>
+dir <4>, result <1>, x<3>, y<12>
+dir <4>, result <1>, x<4>, y<12>
+dir <4>, result <1>, x<5>, y<12>
+dir <1>, result <1>, x<6>, y<12>
+dir <1>, result <1>, x<6>, y<11>
+dir <4>, result <1>, x<6>, y<10>
+dir <4>, result <1>, x<7>, y<10>
+dir <2>, result <1>, x<8>, y<10>
+dir <2>, result <1>, x<8>, y<11>
+dir <2>, result <1>, x<8>, y<12>
+dir <2>, result <1>, x<8>, y<13>
+dir <3>, result <1>, x<8>, y<14>
+dir <3>, result <1>, x<7>, y<14>
+dir <3>, result <1>, x<6>, y<14>
+dir <3>, result <1>, x<5>, y<14>
+dir <2>, result <1>, x<4>, y<14>
+dir <2>, result <1>, x<4>, y<15>
+dir <2>, result <1>, x<4>, y<16>
+dir <2>, result <1>, x<4>, y<17>
+dir <4>, result <1>, x<4>, y<18>
+dir <4>, result <1>, x<5>, y<18>
+dir <1>, result <1>, x<6>, y<18>
+dir <1>, result <1>, x<6>, y<17>
+dir <4>, result <1>, x<6>, y<16>
+dir <4>, result <1>, x<7>, y<16>
+dir <2>, result <1>, x<8>, y<16>
+dir <2>, result <1>, x<8>, y<17>
+dir <4>, result <1>, x<8>, y<18>
+dir <4>, result <1>, x<9>, y<18>
+dir <1>, result <1>, x<10>, y<18>
+dir <1>, result <1>, x<10>, y<17>
+dir <4>, result <1>, x<10>, y<16>
+dir <4>, result <1>, x<11>, y<16>
+dir <1>, result <1>, x<12>, y<16>
+dir <1>, result <1>, x<12>, y<15>
+dir <4>, result <1>, x<12>, y<14>
+dir <4>, result <1>, x<13>, y<14>
+dir <1>, result <1>, x<14>, y<14>
+dir <1>, result <1>, x<14>, y<13>
+dir <3>, result <1>, x<14>, y<12>
+dir <3>, result <1>, x<13>, y<12>
+dir <3>, result <1>, x<12>, y<12>
+dir <3>, result <1>, x<11>, y<12>
+dir <2>, result <1>, x<10>, y<12>
+dir <2>, result <1>, x<10>, y<13>
+dir <1>, result <1>, x<10>, y<13>
+dir <1>, result <1>, x<10>, y<12>
+dir <1>, result <1>, x<10>, y<12>
+dir <1>, result <1>, x<10>, y<11>
+dir <1>, result <1>, x<10>, y<10>
+dir <1>, result <1>, x<10>, y<9>
+dir <1>, result <1>, x<10>, y<8>
+dir <1>, result <1>, x<10>, y<7>
+dir <1>, result <1>, x<10>, y<6>
+dir <1>, result <1>, x<10>, y<5>
+dir <3>, result <1>, x<10>, y<4>
+dir <3>, result <1>, x<9>, y<4>
+dir <1>, result <1>, x<8>, y<4>
+dir <1>, result <1>, x<8>, y<3>
+dir <1>, result <1>, x<8>, y<2>
+dir <1>, result <1>, x<8>, y<1>
+dir <3>, result <1>, x<8>, y<0>
+dir <3>, result <1>, x<7>, y<0>
+dir <2>, result <1>, x<6>, y<0>
+dir <2>, result <1>, x<6>, y<1>
+dir <3>, result <1>, x<6>, y<2>
+dir <3>, result <1>, x<5>, y<2>
+dir <3>, result <1>, x<4>, y<2>
+dir <3>, result <1>, x<3>, y<2>
+dir <2>, result <1>, x<2>, y<2>
+dir <2>, result <1>, x<2>, y<3>
+dir <4>, result <1>, x<2>, y<4>
+dir <4>, result <1>, x<3>, y<4>
+dir <4>, result <1>, x<4>, y<4>
+dir <4>, result <1>, x<5>, y<4>
+dir <2>, result <1>, x<6>, y<4>
+dir <2>, result <1>, x<6>, y<5>
+dir <3>, result <1>, x<6>, y<6>
+dir <3>, result <1>, x<5>, y<6>
+dir <2>, result <1>, x<4>, y<6>
+dir <2>, result <1>, x<4>, y<7>
+dir <4>, result <1>, x<4>, y<8>
+dir <4>, result <1>, x<5>, y<8>
+dir <4>, result <1>, x<6>, y<8>
+dir <4>, result <1>, x<7>, y<8>
+dir <1>, result <1>, x<8>, y<8>
+dir <1>, result <1>, x<8>, y<7>
+dir <2>, result <1>, x<8>, y<7>
+dir <2>, result <1>, x<8>, y<8>
+dir <3>, result <1>, x<7>, y<8>
+dir <3>, result <1>, x<6>, y<8>
+dir <3>, result <1>, x<5>, y<8>
+dir <3>, result <1>, x<4>, y<8>
+dir <2>, result <1>, x<4>, y<8>
+dir <2>, result <1>, x<4>, y<9>
+dir <3>, result <1>, x<4>, y<10>
+dir <3>, result <1>, x<3>, y<10>
+dir <3>, result <1>, x<2>, y<10>
+dir <3>, result <1>, x<1>, y<10>
+dir <2>, result <1>, x<0>, y<10>
+dir <2>, result <1>, x<0>, y<11>
+dir <3>, result <1>, x<0>, y<12>
+dir <3>, result <1>, x<-1>, y<12>
+dir <1>, result <1>, x<-2>, y<12>
+dir <1>, result <1>, x<-2>, y<11>
+dir <2>, result <1>, x<-2>, y<11>
+dir <2>, result <1>, x<-2>, y<12>
+dir <4>, result <1>, x<-1>, y<12>
+dir <4>, result <1>, x<0>, y<12>
+dir <2>, result <1>, x<0>, y<12>
+dir <2>, result <1>, x<0>, y<13>
+dir <1>, result <1>, x<0>, y<13>
+dir <1>, result <1>, x<0>, y<12>
+dir <1>, result <1>, x<0>, y<11>
+dir <1>, result <1>, x<0>, y<10>
+dir <1>, result <1>, x<0>, y<10>
+dir <1>, result <1>, x<0>, y<9>
+dir <1>, result <1>, x<0>, y<8>
+dir <1>, result <1>, x<0>, y<7>
+dir <4>, result <1>, x<0>, y<6>
+dir <4>, result <1>, x<1>, y<6>
+dir <2>, result <1>, x<2>, y<6>
+dir <2>, result <1>, x<2>, y<7>
+dir <1>, result <1>, x<2>, y<7>
+dir <1>, result <1>, x<2>, y<6>
+dir <3>, result <1>, x<1>, y<6>
+dir <3>, result <1>, x<0>, y<6>
+dir <1>, result <1>, x<0>, y<6>
+dir <1>, result <1>, x<0>, y<5>
+dir <1>, result <1>, x<0>, y<4>
+dir <1>, result <1>, x<0>, y<3>
+dir <3>, result <1>, x<0>, y<2>
+dir <3>, result <1>, x<-1>, y<2>
+dir <1>, result <1>, x<-2>, y<2>
+dir <1>, result <1>, x<-2>, y<1>
+dir <2>, result <1>, x<-2>, y<1>
+dir <2>, result <1>, x<-2>, y<2>
+dir <4>, result <1>, x<-1>, y<2>
+dir <4>, result <1>, x<0>, y<2>
+dir <2>, result <1>, x<0>, y<3>
+dir <2>, result <1>, x<0>, y<4>
+dir <2>, result <1>, x<0>, y<5>
+dir <2>, result <1>, x<0>, y<6>
+dir <2>, result <1>, x<0>, y<7>
+dir <2>, result <1>, x<0>, y<8>
+dir <2>, result <1>, x<0>, y<9>
+dir <2>, result <1>, x<0>, y<10>
+dir <4>, result <1>, x<1>, y<10>
+dir <4>, result <1>, x<2>, y<10>
+dir <4>, result <1>, x<3>, y<10>
+dir <4>, result <1>, x<4>, y<10>
+dir <1>, result <1>, x<4>, y<9>
+dir <1>, result <1>, x<4>, y<8>
+dir <1>, result <1>, x<4>, y<7>
+dir <1>, result <1>, x<4>, y<6>
+dir <4>, result <1>, x<5>, y<6>
+dir <4>, result <1>, x<6>, y<6>
+dir <1>, result <1>, x<6>, y<5>
+dir <1>, result <1>, x<6>, y<4>
+dir <3>, result <1>, x<5>, y<4>
+dir <3>, result <1>, x<4>, y<4>
+dir <3>, result <1>, x<3>, y<4>
+dir <3>, result <1>, x<2>, y<4>
+dir <1>, result <1>, x<2>, y<3>
+dir <1>, result <1>, x<2>, y<2>
+dir <1>, result <1>, x<2>, y<2>
+dir <1>, result <1>, x<2>, y<1>
+dir <4>, result <1>, x<2>, y<0>
+dir <4>, result <1>, x<3>, y<0>
+dir <1>, result <1>, x<4>, y<0>
+dir <1>, result <1>, x<4>, y<-1>
+dir <1>, result <1>, x<4>, y<-2>
+dir <1>, result <1>, x<4>, y<-3>
+dir <1>, result <1>, x<4>, y<-4>
+dir <1>, result <1>, x<4>, y<-5>
+dir <1>, result <1>, x<4>, y<-6>
+dir <1>, result <1>, x<4>, y<-7>
+dir <1>, result <1>, x<4>, y<-8>
+dir <1>, result <1>, x<4>, y<-9>
+dir <1>, result <1>, x<4>, y<-10>
+dir <1>, result <1>, x<4>, y<-11>
+dir <3>, result <1>, x<4>, y<-12>
+dir <3>, result <1>, x<3>, y<-12>
+dir <1>, result <1>, x<2>, y<-12>
+dir <1>, result <1>, x<2>, y<-13>
+dir <3>, result <1>, x<2>, y<-14>
+dir <3>, result <1>, x<1>, y<-14>
+dir <2>, result <1>, x<0>, y<-14>
+dir <2>, result <1>, x<0>, y<-13>
+dir <2>, result <1>, x<0>, y<-12>
+dir <2>, result <1>, x<0>, y<-11>
+dir <3>, result <1>, x<0>, y<-10>
+dir <3>, result <1>, x<-1>, y<-10>
+dir <1>, result <1>, x<-2>, y<-10>
+dir <1>, result <1>, x<-2>, y<-11>
+dir <3>, result <1>, x<-2>, y<-12>
+dir <3>, result <1>, x<-3>, y<-12>
+dir <1>, result <1>, x<-4>, y<-12>
+dir <1>, result <1>, x<-4>, y<-13>
+dir <1>, result <1>, x<-4>, y<-14>
+dir <1>, result <1>, x<-4>, y<-15>
+dir <1>, result <1>, x<-4>, y<-16>
+dir <1>, result <1>, x<-4>, y<-17>
+dir <4>, result <1>, x<-4>, y<-18>
+dir <4>, result <1>, x<-3>, y<-18>
+dir <2>, result <1>, x<-2>, y<-18>
+dir <2>, result <1>, x<-2>, y<-17>
+dir <4>, result <1>, x<-2>, y<-16>
+dir <4>, result <1>, x<-1>, y<-16>
+dir <4>, result <1>, x<0>, y<-16>
+dir <4>, result <1>, x<1>, y<-16>
+dir <4>, result <1>, x<2>, y<-16>
+dir <4>, result <1>, x<3>, y<-16>
+dir <1>, result <1>, x<4>, y<-16>
+dir <1>, result <1>, x<4>, y<-17>
+dir <4>, result <1>, x<4>, y<-18>
+dir <4>, result <1>, x<5>, y<-18>
+dir <1>, result <1>, x<6>, y<-18>
+dir <1>, result <1>, x<6>, y<-19>
+dir <4>, result <1>, x<6>, y<-20>
+dir <4>, result <1>, x<7>, y<-20>
+dir <4>, result <1>, x<8>, y<-20>
+dir <4>, result <1>, x<9>, y<-20>
+dir <2>, result <1>, x<10>, y<-20>
+dir <2>, result <1>, x<10>, y<-19>
+dir <2>, result <1>, x<10>, y<-18>
+dir <2>, result <1>, x<10>, y<-17>
+dir <2>, result <1>, x<10>, y<-16>
+dir <2>, result <1>, x<10>, y<-15>
+dir <2>, result <1>, x<10>, y<-14>
+dir <2>, result <1>, x<10>, y<-13>
+dir <2>, result <1>, x<10>, y<-12>
+dir <2>, result <1>, x<10>, y<-11>
+dir <4>, result <1>, x<10>, y<-10>
+dir <4>, result <1>, x<11>, y<-10>
+dir <1>, result <1>, x<12>, y<-10>
+dir <1>, result <1>, x<12>, y<-11>
+dir <4>, result <1>, x<12>, y<-12>
+dir <4>, result <1>, x<13>, y<-12>
+dir <2>, result <1>, x<14>, y<-12>
+dir <2>, result <1>, x<14>, y<-11>
+dir <4>, result <1>, x<14>, y<-10>
+dir <4>, result <1>, x<15>, y<-10>
+dir <2>, result <1>, x<16>, y<-10>
+dir <2>, result <1>, x<16>, y<-9>
+dir <2>, result <1>, x<16>, y<-8>
+dir <2>, result <1>, x<16>, y<-7>
+dir <4>, result <1>, x<16>, y<-6>
+dir <4>, result <1>, x<17>, y<-6>
+dir <2>, result <1>, x<18>, y<-6>
+dir <2>, result <1>, x<18>, y<-5>
+dir <3>, result <1>, x<18>, y<-4>
+dir <3>, result <1>, x<17>, y<-4>
+dir <3>, result <1>, x<16>, y<-4>
+dir <3>, result <1>, x<15>, y<-4>
+dir <3>, result <1>, x<14>, y<-4>
+dir <3>, result <1>, x<13>, y<-4>
+dir <3>, result <1>, x<12>, y<-4>
+dir <3>, result <1>, x<11>, y<-4>
+dir <1>, result <1>, x<10>, y<-4>
+dir <1>, result <1>, x<10>, y<-5>
+dir <4>, result <1>, x<10>, y<-6>
+dir <4>, result <1>, x<11>, y<-6>
+dir <4>, result <1>, x<12>, y<-6>
+dir <4>, result <1>, x<13>, y<-6>
+dir <1>, result <1>, x<14>, y<-6>
+dir <1>, result <1>, x<14>, y<-7>
+dir <3>, result <1>, x<14>, y<-8>
+dir <3>, result <1>, x<13>, y<-8>
+dir <3>, result <1>, x<12>, y<-8>
+dir <3>, result <1>, x<11>, y<-8>
+dir <3>, result <1>, x<10>, y<-8>
+dir <3>, result <1>, x<9>, y<-8>
+dir <1>, result <1>, x<8>, y<-8>
+dir <1>, result <1>, x<8>, y<-9>
+dir <3>, result <1>, x<8>, y<-10>
+dir <3>, result <1>, x<7>, y<-10>
+dir <2>, result <1>, x<6>, y<-10>
+dir <2>, result <1>, x<6>, y<-9>
+dir <2>, result <1>, x<6>, y<-8>
+dir <2>, result <1>, x<6>, y<-7>
+dir <2>, result <1>, x<6>, y<-6>
+dir <2>, result <1>, x<6>, y<-5>
+dir <4>, result <1>, x<6>, y<-4>
+dir <4>, result <1>, x<7>, y<-4>
+dir <2>, result <1>, x<8>, y<-4>
+dir <2>, result <1>, x<8>, y<-3>
+dir <4>, result <1>, x<8>, y<-2>
+dir <4>, result <1>, x<9>, y<-2>
+dir <4>, result <1>, x<10>, y<-2>
+dir <4>, result <1>, x<11>, y<-2>
+dir <4>, result <1>, x<12>, y<-2>
+dir <4>, result <1>, x<13>, y<-2>
+dir <2>, result <1>, x<14>, y<-2>
+dir <2>, result <1>, x<14>, y<-1>
+dir <3>, result <1>, x<14>, y<0>
+dir <3>, result <1>, x<13>, y<0>
+dir <2>, result <1>, x<12>, y<0>
+dir <2>, result <1>, x<12>, y<1>
+dir <3>, result <1>, x<12>, y<2>
+dir <3>, result <1>, x<11>, y<2>
+dir <1>, result <1>, x<10>, y<2>
+dir <1>, result <1>, x<10>, y<1>
+dir <2>, result <1>, x<10>, y<1>
+dir <2>, result <1>, x<10>, y<2>
+dir <4>, result <1>, x<11>, y<2>
+dir <4>, result <1>, x<12>, y<2>
+dir <2>, result <1>, x<12>, y<2>
+dir <2>, result <1>, x<12>, y<3>
+dir <2>, result <1>, x<12>, y<4>
+dir <2>, result <1>, x<12>, y<5>
+dir <4>, result <1>, x<12>, y<6>
+dir <4>, result <1>, x<13>, y<6>
+dir <2>, result <1>, x<14>, y<6>
+dir <2>, result <1>, x<14>, y<7>
+dir <2>, result <1>, x<14>, y<8>
+dir <2>, result <1>, x<14>, y<9>
+dir <4>, result <1>, x<14>, y<10>
+dir <4>, result <1>, x<15>, y<10>
+dir <2>, result <1>, x<16>, y<10>
+dir <2>, result <1>, x<16>, y<11>
+dir <4>, result <1>, x<16>, y<12>
+dir <4>, result <1>, x<17>, y<12>
+dir <2>, result <1>, x<18>, y<12>
+dir <2>, result <1>, x<18>, y<13>
+dir <2>, result <1>, x<18>, y<14>
+dir <2>, result <1>, x<18>, y<15>
+dir <3>, result <1>, x<18>, y<16>
+dir <3>, result <1>, x<17>, y<16>
+dir <3>, result <1>, x<16>, y<16>
+dir <3>, result <1>, x<15>, y<16>
+dir <2>, result <1>, x<14>, y<16>
+dir <2>, result <1>, x<14>, y<17>
+dir <4>, result <1>, x<14>, y<18>
+dir <4>, result <1>, x<15>, y<18>
+dir <4>, result <1>, x<16>, y<18>
+count 411
+dir <3>, result <1>, x<16>, y<18>
+dir <3>, result <1>, x<15>, y<18>
+dir <3>, result <1>, x<14>, y<18>
+count 414
+dir <3>, result <1>, x<14>, y<18>
+dir <3>, result <1>, x<13>, y<18>
+count 416
+dir <4>, result <1>, x<13>, y<18>
+dir <4>, result <1>, x<14>, y<18>
+count 414
+dir <1>, result <1>, x<14>, y<17>
+dir <1>, result <1>, x<14>, y<16>
+dir <4>, result <1>, x<15>, y<16>
+dir <4>, result <1>, x<16>, y<16>
+count 418
+dir <1>, result <1>, x<16>, y<16>
+dir <1>, result <1>, x<16>, y<15>
+count 420
+dir <2>, result <1>, x<16>, y<15>
+dir <2>, result <1>, x<16>, y<16>
+count 418
+dir <4>, result <1>, x<17>, y<16>
+dir <4>, result <1>, x<18>, y<16>
+dir <1>, result <1>, x<18>, y<15>
+dir <1>, result <1>, x<18>, y<14>
+dir <1>, result <1>, x<18>, y<13>
+dir <1>, result <1>, x<18>, y<12>
+count 424
+dir <1>, result <1>, x<18>, y<12>
+dir <1>, result <1>, x<18>, y<11>
+dir <1>, result <1>, x<18>, y<10>
+dir <1>, result <1>, x<18>, y<9>
+dir <3>, result <1>, x<18>, y<8>
+dir <3>, result <1>, x<17>, y<8>
+dir <1>, result <1>, x<16>, y<8>
+dir <1>, result <1>, x<16>, y<7>
+dir <4>, result <1>, x<16>, y<6>
+dir <4>, result <1>, x<17>, y<6>
+dir <1>, result <1>, x<18>, y<6>
+dir <1>, result <1>, x<18>, y<5>
+dir <3>, result <1>, x<18>, y<4>
+dir <3>, result <1>, x<17>, y<4>
+dir <1>, result <1>, x<16>, y<4>
+dir <1>, result <1>, x<16>, y<3>
+dir <4>, result <1>, x<16>, y<2>
+dir <4>, result <1>, x<17>, y<2>
+dir <1>, result <1>, x<18>, y<2>
+dir <1>, result <1>, x<18>, y<1>
+dir <3>, result <1>, x<18>, y<0>
+dir <3>, result <1>, x<17>, y<0>
+dir <1>, result <1>, x<16>, y<0>
+dir <1>, result <1>, x<16>, y<-1>
+dir <4>, result <1>, x<16>, y<-2>
+dir <4>, result <1>, x<17>, y<-2>
+count 450
+dir <3>, result <1>, x<17>, y<-2>
+dir <3>, result <1>, x<16>, y<-2>
+dir <2>, result <1>, x<16>, y<-1>
+dir <2>, result <1>, x<16>, y<0>
+dir <4>, result <1>, x<17>, y<0>
+dir <4>, result <1>, x<18>, y<0>
+dir <2>, result <1>, x<18>, y<1>
+dir <2>, result <1>, x<18>, y<2>
+dir <3>, result <1>, x<17>, y<2>
+dir <3>, result <1>, x<16>, y<2>
+count 460
+dir <3>, result <1>, x<16>, y<2>
+dir <3>, result <1>, x<15>, y<2>
+dir <2>, result <1>, x<14>, y<2>
+dir <2>, result <1>, x<14>, y<3>
+count 464
+dir <1>, result <1>, x<14>, y<3>
+dir <1>, result <1>, x<14>, y<2>
+dir <4>, result <1>, x<15>, y<2>
+dir <4>, result <1>, x<16>, y<2>
+count 460
+dir <2>, result <1>, x<16>, y<3>
+dir <2>, result <1>, x<16>, y<4>
+dir <4>, result <1>, x<17>, y<4>
+dir <4>, result <1>, x<18>, y<4>
+dir <2>, result <1>, x<18>, y<5>
+dir <2>, result <1>, x<18>, y<6>
+dir <3>, result <1>, x<17>, y<6>
+dir <3>, result <1>, x<16>, y<6>
+dir <2>, result <1>, x<16>, y<7>
+dir <2>, result <1>, x<16>, y<8>
+dir <4>, result <1>, x<17>, y<8>
+dir <4>, result <1>, x<18>, y<8>
+dir <2>, result <1>, x<18>, y<9>
+dir <2>, result <1>, x<18>, y<10>
+dir <2>, result <1>, x<18>, y<11>
+dir <2>, result <1>, x<18>, y<12>
+count 424
+dir <3>, result <1>, x<17>, y<12>
+dir <3>, result <1>, x<16>, y<12>
+dir <1>, result <1>, x<16>, y<11>
+dir <1>, result <1>, x<16>, y<10>
+dir <3>, result <1>, x<15>, y<10>
+dir <3>, result <1>, x<14>, y<10>
+count 430
+dir <3>, result <1>, x<14>, y<10>
+dir <3>, result <1>, x<13>, y<10>
+dir <1>, result <1>, x<12>, y<10>
+dir <1>, result <1>, x<12>, y<9>
+count 434
+dir <2>, result <1>, x<12>, y<9>
+dir <2>, result <1>, x<12>, y<10>
+dir <4>, result <1>, x<13>, y<10>
+dir <4>, result <1>, x<14>, y<10>
+count 430
+dir <1>, result <1>, x<14>, y<9>
+dir <1>, result <1>, x<14>, y<8>
+dir <1>, result <1>, x<14>, y<7>
+dir <1>, result <1>, x<14>, y<6>
+dir <3>, result <1>, x<13>, y<6>
+dir <3>, result <1>, x<12>, y<6>
+dir <1>, result <1>, x<12>, y<5>
+dir <1>, result <1>, x<12>, y<4>
+dir <1>, result <1>, x<12>, y<3>
+dir <1>, result <1>, x<12>, y<2>
+count 440
+dir <1>, result <1>, x<12>, y<1>
+dir <1>, result <1>, x<12>, y<0>
+dir <4>, result <1>, x<13>, y<0>
+dir <4>, result <1>, x<14>, y<0>
+dir <1>, result <1>, x<14>, y<-1>
+dir <1>, result <1>, x<14>, y<-2>
+dir <3>, result <1>, x<13>, y<-2>
+dir <3>, result <1>, x<12>, y<-2>
+dir <3>, result <1>, x<11>, y<-2>
+dir <3>, result <1>, x<10>, y<-2>
+dir <3>, result <1>, x<9>, y<-2>
+dir <3>, result <1>, x<8>, y<-2>
+count 452
+dir <3>, result <1>, x<8>, y<-2>
+dir <3>, result <1>, x<7>, y<-2>
+count 454
+dir <4>, result <1>, x<7>, y<-2>
+dir <4>, result <1>, x<8>, y<-2>
+count 452
+dir <1>, result <1>, x<8>, y<-3>
+dir <1>, result <1>, x<8>, y<-4>
+count 454
+dir <1>, result <1>, x<8>, y<-4>
+dir <1>, result <1>, x<8>, y<-5>
+count 456
+dir <2>, result <1>, x<8>, y<-5>
+dir <2>, result <1>, x<8>, y<-4>
+count 454
+dir <3>, result <1>, x<7>, y<-4>
+dir <3>, result <1>, x<6>, y<-4>
+dir <1>, result <1>, x<6>, y<-5>
+dir <1>, result <1>, x<6>, y<-6>
+dir <1>, result <1>, x<6>, y<-7>
+dir <1>, result <1>, x<6>, y<-8>
+dir <1>, result <1>, x<6>, y<-9>
+dir <1>, result <1>, x<6>, y<-10>
+count 462
+dir <1>, result <1>, x<6>, y<-10>
+dir <1>, result <1>, x<6>, y<-11>
+dir <1>, result <1>, x<6>, y<-12>
+dir <1>, result <1>, x<6>, y<-13>
+dir <3>, result <1>, x<6>, y<-14>
+dir <3>, result <1>, x<5>, y<-14>
+count 468
+dir <4>, result <1>, x<5>, y<-14>
+dir <4>, result <1>, x<6>, y<-14>
+count 470
+dir <1>, result <1>, x<6>, y<-14>
+dir <1>, result <1>, x<6>, y<-15>
+dir <4>, result <1>, x<6>, y<-16>
+dir <4>, result <1>, x<7>, y<-16>
+dir <2>, result <1>, x<8>, y<-16>
+dir <2>, result <1>, x<8>, y<-15>
+dir <2>, result <1>, x<8>, y<-14>
+dir <2>, result <1>, x<8>, y<-13>
+count 478
+dir <1>, result <1>, x<8>, y<-13>
+dir <1>, result <1>, x<8>, y<-14>
+dir <1>, result <1>, x<8>, y<-15>
+dir <1>, result <1>, x<8>, y<-16>
+count 482
+dir <1>, result <1>, x<8>, y<-16>
+dir <1>, result <1>, x<8>, y<-17>
+count 484
+dir <2>, result <1>, x<8>, y<-17>
+dir <2>, result <1>, x<8>, y<-16>
+count 482
+dir <3>, result <1>, x<7>, y<-16>
+dir <3>, result <1>, x<6>, y<-16>
+dir <2>, result <1>, x<6>, y<-15>
+dir <2>, result <1>, x<6>, y<-14>
+count 470
+dir <2>, result <1>, x<6>, y<-13>
+dir <2>, result <1>, x<6>, y<-12>
+dir <2>, result <1>, x<6>, y<-11>
+dir <2>, result <1>, x<6>, y<-10>
+count 462
+dir <4>, result <1>, x<7>, y<-10>
+dir <4>, result <1>, x<8>, y<-10>
+dir <2>, result <1>, x<8>, y<-9>
+dir <2>, result <1>, x<8>, y<-8>
+dir <4>, result <1>, x<9>, y<-8>
+dir <4>, result <1>, x<10>, y<-8>
+dir <4>, result <1>, x<11>, y<-8>
+dir <4>, result <1>, x<12>, y<-8>
+dir <4>, result <1>, x<13>, y<-8>
+dir <4>, result <1>, x<14>, y<-8>
+dir <2>, result <1>, x<14>, y<-7>
+dir <2>, result <1>, x<14>, y<-6>
+dir <3>, result <1>, x<13>, y<-6>
+dir <3>, result <1>, x<12>, y<-6>
+dir <3>, result <1>, x<11>, y<-6>
+dir <3>, result <1>, x<10>, y<-6>
+dir <2>, result <1>, x<10>, y<-5>
+dir <2>, result <1>, x<10>, y<-4>
+dir <4>, result <1>, x<11>, y<-4>
+dir <4>, result <1>, x<12>, y<-4>
+dir <4>, result <1>, x<13>, y<-4>
+dir <4>, result <1>, x<14>, y<-4>
+dir <4>, result <1>, x<15>, y<-4>
+dir <4>, result <1>, x<16>, y<-4>
+dir <4>, result <1>, x<17>, y<-4>
+dir <4>, result <1>, x<18>, y<-4>
+dir <1>, result <1>, x<18>, y<-5>
+dir <1>, result <1>, x<18>, y<-6>
+count 490
+dir <1>, result <1>, x<18>, y<-6>
+dir <1>, result <1>, x<18>, y<-7>
+dir <1>, result <1>, x<18>, y<-8>
+dir <1>, result <1>, x<18>, y<-9>
+dir <1>, result <1>, x<18>, y<-10>
+dir <1>, result <1>, x<18>, y<-11>
+dir <3>, result <1>, x<18>, y<-12>
+dir <3>, result <1>, x<17>, y<-12>
+dir <1>, result <1>, x<16>, y<-12>
+dir <1>, result <1>, x<16>, y<-13>
+dir <3>, result <1>, x<16>, y<-14>
+dir <3>, result <1>, x<15>, y<-14>
+dir <1>, result <1>, x<14>, y<-14>
+dir <1>, result <1>, x<14>, y<-15>
+dir <3>, result <1>, x<14>, y<-16>
+dir <3>, result <1>, x<13>, y<-16>
+dir <2>, result <1>, x<12>, y<-16>
+dir <2>, result <1>, x<12>, y<-15>
+count 508
+dir <1>, result <1>, x<12>, y<-15>
+dir <1>, result <1>, x<12>, y<-16>
+count 510
+dir <1>, result <1>, x<12>, y<-16>
+dir <1>, result <1>, x<12>, y<-17>
+dir <4>, result <1>, x<12>, y<-18>
+dir <4>, result <1>, x<13>, y<-18>
+dir <1>, result <1>, x<14>, y<-18>
+dir <1>, result <1>, x<14>, y<-19>
+dir <4>, result <1>, x<14>, y<-20>
+dir <4>, result <1>, x<15>, y<-20>
+dir <4>, result <1>, x<16>, y<-20>
+dir <4>, result <1>, x<17>, y<-20>
+dir <2>, result <1>, x<18>, y<-20>
+dir <2>, result <1>, x<18>, y<-19>
+dir <2>, result <1>, x<18>, y<-18>
+dir <2>, result <1>, x<18>, y<-17>
+dir <3>, result <1>, x<18>, y<-16>
+dir <3>, result <1>, x<17>, y<-16>
+dir <1>, result <1>, x<16>, y<-16>
+dir <1>, result <1>, x<16>, y<-17>
+count 528
+dir <2>, result <1>, x<16>, y<-17>
+dir <2>, result <1>, x<16>, y<-16>
+dir <4>, result <1>, x<17>, y<-16>
+dir <4>, result <1>, x<18>, y<-16>
+count 532
+dir <2>, result <1>, x<18>, y<-16>
+dir <2>, result <1>, x<18>, y<-15>
+count 534
+dir <1>, result <1>, x<18>, y<-15>
+dir <1>, result <1>, x<18>, y<-16>
+count 532
+dir <1>, result <1>, x<18>, y<-17>
+dir <1>, result <1>, x<18>, y<-18>
+dir <1>, result <1>, x<18>, y<-19>
+dir <1>, result <1>, x<18>, y<-20>
+dir <3>, result <1>, x<17>, y<-20>
+dir <3>, result <1>, x<16>, y<-20>
+dir <3>, result <1>, x<15>, y<-20>
+dir <3>, result <1>, x<14>, y<-20>
+count 540
+dir <3>, result <1>, x<14>, y<-20>
+dir <3>, result <1>, x<13>, y<-20>
+count 542
+dir <4>, result <1>, x<13>, y<-20>
+dir <4>, result <1>, x<14>, y<-20>
+count 540
+dir <2>, result <1>, x<14>, y<-19>
+dir <2>, result <1>, x<14>, y<-18>
+dir <3>, result <1>, x<13>, y<-18>
+dir <3>, result <1>, x<12>, y<-18>
+dir <2>, result <1>, x<12>, y<-17>
+dir <2>, result <1>, x<12>, y<-16>
+count 510
+dir <4>, result <1>, x<13>, y<-16>
+dir <4>, result <1>, x<14>, y<-16>
+dir <2>, result <1>, x<14>, y<-15>
+dir <2>, result <1>, x<14>, y<-14>
+dir <4>, result <1>, x<15>, y<-14>
+dir <4>, result <1>, x<16>, y<-14>
+dir <2>, result <1>, x<16>, y<-13>
+dir <2>, result <1>, x<16>, y<-12>
+dir <4>, result <1>, x<17>, y<-12>
+dir <4>, result <1>, x<18>, y<-12>
+dir <2>, result <1>, x<18>, y<-11>
+dir <2>, result <1>, x<18>, y<-10>
+dir <2>, result <1>, x<18>, y<-9>
+dir <2>, result <1>, x<18>, y<-8>
+dir <2>, result <1>, x<18>, y<-7>
+dir <2>, result <1>, x<18>, y<-6>
+count 490
+dir <3>, result <1>, x<17>, y<-6>
+dir <3>, result <1>, x<16>, y<-6>
+dir <1>, result <1>, x<16>, y<-7>
+dir <1>, result <1>, x<16>, y<-8>
+dir <1>, result <1>, x<16>, y<-9>
+dir <1>, result <1>, x<16>, y<-10>
+dir <3>, result <1>, x<15>, y<-10>
+dir <3>, result <1>, x<14>, y<-10>
+dir <1>, result <1>, x<14>, y<-11>
+dir <1>, result <1>, x<14>, y<-12>
+dir <3>, result <1>, x<13>, y<-12>
+dir <3>, result <1>, x<12>, y<-12>
+dir <2>, result <1>, x<12>, y<-11>
+dir <2>, result <1>, x<12>, y<-10>
+dir <3>, result <1>, x<11>, y<-10>
+dir <3>, result <1>, x<10>, y<-10>
+dir <1>, result <1>, x<10>, y<-11>
+dir <1>, result <1>, x<10>, y<-12>
+dir <1>, result <1>, x<10>, y<-13>
+dir <1>, result <1>, x<10>, y<-14>
+dir <1>, result <1>, x<10>, y<-15>
+dir <1>, result <1>, x<10>, y<-16>
+dir <1>, result <1>, x<10>, y<-17>
+dir <1>, result <1>, x<10>, y<-18>
+dir <1>, result <1>, x<10>, y<-19>
+dir <1>, result <1>, x<10>, y<-20>
+dir <3>, result <1>, x<9>, y<-20>
+dir <3>, result <1>, x<8>, y<-20>
+dir <3>, result <1>, x<7>, y<-20>
+dir <3>, result <1>, x<6>, y<-20>
+count 520
+dir <3>, result <1>, x<6>, y<-20>
+dir <3>, result <1>, x<5>, y<-20>
+dir <3>, result <1>, x<4>, y<-20>
+dir <3>, result <1>, x<3>, y<-20>
+dir <2>, result <1>, x<2>, y<-20>
+dir <2>, result <1>, x<2>, y<-19>
+dir <3>, result <1>, x<2>, y<-18>
+dir <3>, result <1>, x<1>, y<-18>
+dir <1>, result <1>, x<0>, y<-18>
+dir <1>, result <1>, x<0>, y<-19>
+dir <3>, result <1>, x<0>, y<-20>
+dir <3>, result <1>, x<-1>, y<-20>
+dir <3>, result <1>, x<-2>, y<-20>
+dir <3>, result <1>, x<-3>, y<-20>
+dir <3>, result <1>, x<-4>, y<-20>
+dir <3>, result <1>, x<-5>, y<-20>
+dir <3>, result <1>, x<-6>, y<-20>
+dir <3>, result <1>, x<-7>, y<-20>
+dir <2>, result <1>, x<-8>, y<-20>
+dir <2>, result <1>, x<-8>, y<-19>
+dir <3>, result <1>, x<-8>, y<-18>
+dir <3>, result <1>, x<-9>, y<-18>
+dir <3>, result <1>, x<-10>, y<-18>
+dir <3>, result <1>, x<-11>, y<-18>
+dir <1>, result <1>, x<-12>, y<-18>
+dir <1>, result <1>, x<-12>, y<-19>
+dir <4>, result <1>, x<-12>, y<-20>
+dir <4>, result <1>, x<-11>, y<-20>
+count 548
+dir <3>, result <1>, x<-11>, y<-20>
+dir <3>, result <1>, x<-12>, y<-20>
+count 550
+dir <3>, result <1>, x<-12>, y<-20>
+dir <3>, result <1>, x<-13>, y<-20>
+dir <2>, result <1>, x<-14>, y<-20>
+dir <2>, result <1>, x<-14>, y<-19>
+dir <2>, result <1>, x<-14>, y<-18>
+dir <2>, result <1>, x<-14>, y<-17>
+dir <2>, result <1>, x<-14>, y<-16>
+dir <2>, result <1>, x<-14>, y<-15>
+dir <2>, result <1>, x<-14>, y<-14>
+dir <2>, result <1>, x<-14>, y<-13>
+dir <2>, result <1>, x<-14>, y<-12>
+dir <2>, result <1>, x<-14>, y<-11>
+dir <3>, result <1>, x<-14>, y<-10>
+dir <3>, result <1>, x<-15>, y<-10>
+dir <2>, result <1>, x<-16>, y<-10>
+dir <2>, result <1>, x<-16>, y<-9>
+dir <3>, result <1>, x<-16>, y<-8>
+dir <3>, result <1>, x<-17>, y<-8>
+dir <1>, result <1>, x<-18>, y<-8>
+dir <1>, result <1>, x<-18>, y<-9>
+dir <3>, result <1>, x<-18>, y<-10>
+dir <3>, result <1>, x<-19>, y<-10>
+dir <2>, result <1>, x<-20>, y<-10>
+dir <2>, result <1>, x<-20>, y<-9>
+dir <2>, result <1>, x<-20>, y<-8>
+dir <2>, result <1>, x<-20>, y<-7>
+dir <4>, result <1>, x<-20>, y<-6>
+dir <4>, result <1>, x<-19>, y<-6>
+dir <2>, result <1>, x<-18>, y<-6>
+dir <2>, result <1>, x<-18>, y<-5>
+dir <3>, result <1>, x<-18>, y<-4>
+dir <3>, result <1>, x<-19>, y<-4>
+dir <2>, result <1>, x<-20>, y<-4>
+dir <2>, result <1>, x<-20>, y<-3>
+dir <2>, result <1>, x<-20>, y<-2>
+dir <2>, result <1>, x<-20>, y<-1>
+dir <2>, result <1>, x<-20>, y<0>
+dir <2>, result <1>, x<-20>, y<1>
+dir <2>, result <1>, x<-20>, y<2>
+dir <2>, result <1>, x<-20>, y<3>
+dir <4>, result <1>, x<-20>, y<4>
+dir <4>, result <1>, x<-19>, y<4>
+dir <4>, result <1>, x<-18>, y<4>
+dir <4>, result <1>, x<-17>, y<4>
+dir <1>, result <1>, x<-16>, y<4>
+dir <1>, result <1>, x<-16>, y<3>
+dir <3>, result <1>, x<-16>, y<2>
+dir <3>, result <1>, x<-17>, y<2>
+dir <1>, result <1>, x<-18>, y<2>
+dir <1>, result <1>, x<-18>, y<1>
+dir <4>, result <1>, x<-18>, y<0>
+dir <4>, result <1>, x<-17>, y<0>
+dir <1>, result <1>, x<-16>, y<0>
+dir <1>, result <1>, x<-16>, y<-1>
+dir <3>, result <1>, x<-16>, y<-2>
+dir <3>, result <1>, x<-17>, y<-2>
+count 606
+dir <4>, result <1>, x<-17>, y<-2>
+dir <4>, result <1>, x<-16>, y<-2>
+count 608
+dir <1>, result <1>, x<-16>, y<-2>
+dir <1>, result <1>, x<-16>, y<-3>
+dir <1>, result <1>, x<-16>, y<-4>
+dir <1>, result <1>, x<-16>, y<-5>
+dir <4>, result <1>, x<-16>, y<-6>
+dir <4>, result <1>, x<-15>, y<-6>
+dir <1>, result <1>, x<-14>, y<-6>
+dir <1>, result <1>, x<-14>, y<-7>
+dir <4>, result <1>, x<-14>, y<-8>
+dir <4>, result <1>, x<-13>, y<-8>
+dir <2>, result <1>, x<-12>, y<-8>
+dir <2>, result <1>, x<-12>, y<-7>
+dir <4>, result <1>, x<-12>, y<-6>
+dir <4>, result <1>, x<-11>, y<-6>
+dir <4>, result <1>, x<-10>, y<-6>
+dir <4>, result <1>, x<-9>, y<-6>
+dir <1>, result <1>, x<-8>, y<-6>
+dir <1>, result <1>, x<-8>, y<-7>
+dir <1>, result <1>, x<-8>, y<-8>
+dir <1>, result <1>, x<-8>, y<-9>
+dir <4>, result <1>, x<-8>, y<-10>
+dir <4>, result <1>, x<-7>, y<-10>
+dir <4>, result <1>, x<-6>, y<-10>
+dir <4>, result <1>, x<-5>, y<-10>
+dir <2>, result <1>, x<-4>, y<-10>
+dir <2>, result <1>, x<-4>, y<-9>
+dir <3>, result <1>, x<-4>, y<-8>
+dir <3>, result <1>, x<-5>, y<-8>
+dir <2>, result <1>, x<-6>, y<-8>
+dir <2>, result <1>, x<-6>, y<-7>
+dir <2>, result <1>, x<-6>, y<-6>
+dir <2>, result <1>, x<-6>, y<-5>
+dir <4>, result <1>, x<-6>, y<-4>
+dir <4>, result <1>, x<-5>, y<-4>
+dir <1>, result <1>, x<-4>, y<-4>
+dir <1>, result <1>, x<-4>, y<-5>
+dir <4>, result <1>, x<-4>, y<-6>
+dir <4>, result <1>, x<-3>, y<-6>
+dir <4>, result <1>, x<-2>, y<-6>
+dir <4>, result <1>, x<-1>, y<-6>
+dir <2>, result <1>, x<0>, y<-6>
+dir <2>, result <1>, x<0>, y<-5>
+dir <4>, result <1>, x<0>, y<-4>
+dir <4>, result <1>, x<1>, y<-4>
+dir <2>, result <1>, x<2>, y<-4>
+dir <2>, result <1>, x<2>, y<-3>
+count 654
+dir <1>, result <1>, x<2>, y<-3>
+dir <1>, result <1>, x<2>, y<-4>
+count 656
+dir <1>, result <1>, x<2>, y<-4>
+dir <1>, result <1>, x<2>, y<-5>
+dir <1>, result <1>, x<2>, y<-6>
+dir <1>, result <1>, x<2>, y<-7>
+dir <3>, result <1>, x<2>, y<-8>
+dir <3>, result <1>, x<1>, y<-8>
+dir <3>, result <1>, x<0>, y<-8>
+dir <3>, result <1>, x<-1>, y<-8>
+count 664
+dir <4>, result <1>, x<-1>, y<-8>
+dir <4>, result <1>, x<0>, y<-8>
+dir <4>, result <1>, x<1>, y<-8>
+dir <4>, result <1>, x<2>, y<-8>
+count 668
+dir <1>, result <1>, x<2>, y<-8>
+dir <1>, result <1>, x<2>, y<-9>
+count 670
+dir <2>, result <1>, x<2>, y<-9>
+dir <2>, result <1>, x<2>, y<-8>
+count 668
+dir <2>, result <1>, x<2>, y<-7>
+dir <2>, result <1>, x<2>, y<-6>
+dir <2>, result <1>, x<2>, y<-5>
+dir <2>, result <1>, x<2>, y<-4>
+count 656
+dir <3>, result <1>, x<1>, y<-4>
+dir <3>, result <1>, x<0>, y<-4>
+count 658
+dir <3>, result <1>, x<0>, y<-4>
+dir <3>, result <1>, x<-1>, y<-4>
+count 660
+dir <4>, result <1>, x<-1>, y<-4>
+dir <4>, result <1>, x<0>, y<-4>
+count 658
+dir <1>, result <1>, x<0>, y<-5>
+dir <1>, result <1>, x<0>, y<-6>
+dir <3>, result <1>, x<-1>, y<-6>
+dir <3>, result <1>, x<-2>, y<-6>
+dir <3>, result <1>, x<-3>, y<-6>
+dir <3>, result <1>, x<-4>, y<-6>
+dir <2>, result <1>, x<-4>, y<-5>
+dir <2>, result <1>, x<-4>, y<-4>
+dir <3>, result <1>, x<-5>, y<-4>
+dir <3>, result <1>, x<-6>, y<-4>
+count 668
+dir <3>, result <1>, x<-6>, y<-4>
+dir <3>, result <1>, x<-7>, y<-4>
+dir <2>, result <1>, x<-8>, y<-4>
+dir <2>, result <1>, x<-8>, y<-3>
+dir <4>, result <1>, x<-8>, y<-2>
+dir <4>, result <1>, x<-7>, y<-2>
+count 674
+dir <3>, result <1>, x<-7>, y<-2>
+dir <3>, result <1>, x<-8>, y<-2>
+count 676
+dir <3>, result <1>, x<-8>, y<-2>
+dir <3>, result <1>, x<-9>, y<-2>
+dir <3>, result <1>, x<-10>, y<-2>
+dir <3>, result <1>, x<-11>, y<-2>
+dir <3>, result <1>, x<-12>, y<-2>
+dir <3>, result <1>, x<-13>, y<-2>
+dir <2>, result <1>, x<-14>, y<-2>
+dir <2>, result <1>, x<-14>, y<-1>
+dir <4>, result <1>, x<-14>, y<0>
+dir <4>, result <1>, x<-13>, y<0>
+dir <4>, result <1>, x<-12>, y<0>
+dir <4>, result <1>, x<-11>, y<0>
+dir <2>, result <1>, x<-10>, y<0>
+dir <2>, result <1>, x<-10>, y<1>
+dir <2>, result <1>, x<-10>, y<2>
+dir <2>, result <1>, x<-10>, y<3>
+dir <3>, result <1>, x<-10>, y<4>
+dir <3>, result <1>, x<-11>, y<4>
+dir <3>, result <1>, x<-12>, y<4>
+dir <3>, result <1>, x<-13>, y<4>
+dir <2>, result <1>, x<-14>, y<4>
+dir <2>, result <1>, x<-14>, y<5>
+dir <3>, result <1>, x<-14>, y<6>
+dir <3>, result <1>, x<-15>, y<6>
+dir <2>, result <1>, x<-16>, y<6>
+dir <2>, result <1>, x<-16>, y<7>
+dir <3>, result <1>, x<-16>, y<8>
+dir <3>, result <1>, x<-17>, y<8>
+dir <2>, result <1>, x<-18>, y<8>
+dir <2>, result <1>, x<-18>, y<9>
+dir <2>, result <1>, x<-18>, y<10>
+dir <2>, result <1>, x<-18>, y<11>
+dir <3>, result <1>, x<-18>, y<12>
+dir <3>, result <1>, x<-19>, y<12>
+dir <2>, result <1>, x<-20>, y<12>
+dir <2>, result <1>, x<-20>, y<13>
+dir <2>, result <1>, x<-20>, y<14>
+dir <2>, result <1>, x<-20>, y<15>
+dir <2>, result <1>, x<-20>, y<16>
+dir <2>, result <1>, x<-20>, y<17>
+dir <4>, result <1>, x<-20>, y<18>
+dir <4>, result <1>, x<-19>, y<18>
+dir <1>, result <1>, x<-18>, y<18>
+dir <1>, result <1>, x<-18>, y<17>
+dir <4>, result <1>, x<-18>, y<16>
+dir <4>, result <1>, x<-17>, y<16>
+dir <1>, result <1>, x<-16>, y<16>
+dir <1>, result <1>, x<-16>, y<15>
+dir <3>, result <1>, x<-16>, y<14>
+dir <3>, result <1>, x<-17>, y<14>
+count 726
+dir <4>, result <1>, x<-17>, y<14>
+dir <4>, result <1>, x<-16>, y<14>
+count 728
+dir <1>, result <1>, x<-16>, y<14>
+dir <1>, result <1>, x<-16>, y<13>
+dir <1>, result <1>, x<-16>, y<12>
+dir <1>, result <1>, x<-16>, y<11>
+dir <4>, result <1>, x<-16>, y<10>
+dir <4>, result <1>, x<-15>, y<10>
+dir <1>, result <1>, x<-14>, y<10>
+dir <1>, result <1>, x<-14>, y<9>
+dir <4>, result <1>, x<-14>, y<8>
+dir <4>, result <1>, x<-13>, y<8>
+dir <4>, result <1>, x<-12>, y<8>
+dir <4>, result <1>, x<-11>, y<8>
+dir <2>, result <1>, x<-10>, y<8>
+dir <2>, result <1>, x<-10>, y<9>
+dir <3>, result <1>, x<-10>, y<10>
+dir <3>, result <1>, x<-11>, y<10>
+dir <2>, result <1>, x<-12>, y<10>
+dir <2>, result <1>, x<-12>, y<11>
+dir <2>, result <1>, x<-12>, y<12>
+dir <2>, result <1>, x<-12>, y<13>
+dir <4>, result <1>, x<-12>, y<14>
+dir <4>, result <1>, x<-11>, y<14>
+dir <2>, result <1>, x<-10>, y<14>
+dir <2>, result <1>, x<-10>, y<15>
+dir <2>, result <1>, x<-10>, y<16>
+dir <2>, result <1>, x<-10>, y<17>
+dir <3>, result <1>, x<-10>, y<18>
+dir <3>, result <1>, x<-11>, y<18>
+dir <1>, result <1>, x<-12>, y<18>
+dir <1>, result <1>, x<-12>, y<17>
+dir <3>, result <1>, x<-12>, y<16>
+dir <3>, result <1>, x<-13>, y<16>
+dir <2>, result <1>, x<-14>, y<16>
+dir <2>, result <1>, x<-14>, y<17>
+dir <3>, result <1>, x<-14>, y<18>
+dir <3>, result <1>, x<-15>, y<18>
+count 764
+dir <4>, result <1>, x<-15>, y<18>
+dir <4>, result <1>, x<-14>, y<18>
+dir <1>, result <1>, x<-14>, y<17>
+dir <1>, result <1>, x<-14>, y<16>
+count 768
+dir <1>, result <1>, x<-14>, y<16>
+dir <1>, result <1>, x<-14>, y<15>
+dir <1>, result <1>, x<-14>, y<14>
+dir <1>, result <1>, x<-14>, y<13>
+count 772
+dir <2>, result <1>, x<-14>, y<13>
+dir <2>, result <1>, x<-14>, y<14>
+dir <2>, result <1>, x<-14>, y<15>
+dir <2>, result <1>, x<-14>, y<16>
+count 768
+dir <4>, result <1>, x<-13>, y<16>
+dir <4>, result <1>, x<-12>, y<16>
+dir <2>, result <1>, x<-12>, y<17>
+dir <2>, result <1>, x<-12>, y<18>
+dir <4>, result <1>, x<-11>, y<18>
+dir <4>, result <1>, x<-10>, y<18>
+dir <1>, result <1>, x<-10>, y<17>
+dir <1>, result <1>, x<-10>, y<16>
+dir <1>, result <1>, x<-10>, y<15>
+dir <1>, result <1>, x<-10>, y<14>
+count 778
+dir <1>, result <1>, x<-10>, y<14>
+dir <1>, result <1>, x<-10>, y<13>
+dir <4>, result <1>, x<-10>, y<12>
+dir <4>, result <1>, x<-9>, y<12>
+dir <4>, result <1>, x<-8>, y<12>
+dir <4>, result <1>, x<-7>, y<12>
+dir <2>, result <1>, x<-6>, y<12>
+dir <2>, result <1>, x<-6>, y<13>
+dir <3>, result <1>, x<-6>, y<14>
+dir <3>, result <1>, x<-7>, y<14>
+count 788
+dir <4>, result <1>, x<-7>, y<14>
+dir <4>, result <1>, x<-6>, y<14>
+dir <1>, result <1>, x<-6>, y<13>
+dir <1>, result <1>, x<-6>, y<12>
+count 792
+dir <1>, result <1>, x<-6>, y<12>
+dir <1>, result <1>, x<-6>, y<11>
+dir <3>, result <1>, x<-6>, y<10>
+dir <3>, result <1>, x<-7>, y<10>
+count 796
+dir <4>, result <1>, x<-7>, y<10>
+dir <4>, result <1>, x<-6>, y<10>
+dir <2>, result <1>, x<-6>, y<11>
+dir <2>, result <1>, x<-6>, y<12>
+count 792
+dir <3>, result <1>, x<-7>, y<12>
+dir <3>, result <1>, x<-8>, y<12>
+dir <3>, result <1>, x<-9>, y<12>
+dir <3>, result <1>, x<-10>, y<12>
+dir <2>, result <1>, x<-10>, y<13>
+dir <2>, result <1>, x<-10>, y<14>
+count 778
+dir <3>, result <1>, x<-11>, y<14>
+dir <3>, result <1>, x<-12>, y<14>
+dir <1>, result <1>, x<-12>, y<13>
+dir <1>, result <1>, x<-12>, y<12>
+dir <1>, result <1>, x<-12>, y<11>
+dir <1>, result <1>, x<-12>, y<10>
+dir <4>, result <1>, x<-11>, y<10>
+dir <4>, result <1>, x<-10>, y<10>
+dir <1>, result <1>, x<-10>, y<9>
+dir <1>, result <1>, x<-10>, y<8>
+count 788
+dir <1>, result <1>, x<-10>, y<8>
+dir <1>, result <1>, x<-10>, y<7>
+dir <3>, result <1>, x<-10>, y<6>
+dir <3>, result <1>, x<-11>, y<6>
+count 792
+dir <4>, result <1>, x<-11>, y<6>
+dir <4>, result <1>, x<-10>, y<6>
+dir <2>, result <1>, x<-10>, y<7>
+dir <2>, result <1>, x<-10>, y<8>
+count 788
+dir <3>, result <1>, x<-11>, y<8>
+dir <3>, result <1>, x<-12>, y<8>
+dir <3>, result <1>, x<-13>, y<8>
+dir <3>, result <1>, x<-14>, y<8>
+dir <2>, result <1>, x<-14>, y<9>
+dir <2>, result <1>, x<-14>, y<10>
+dir <3>, result <1>, x<-15>, y<10>
+dir <3>, result <1>, x<-16>, y<10>
+dir <2>, result <1>, x<-16>, y<11>
+dir <2>, result <1>, x<-16>, y<12>
+dir <2>, result <1>, x<-16>, y<13>
+dir <2>, result <1>, x<-16>, y<14>
+count 728
+dir <2>, result <1>, x<-16>, y<15>
+dir <2>, result <1>, x<-16>, y<16>
+dir <3>, result <1>, x<-17>, y<16>
+dir <3>, result <1>, x<-18>, y<16>
+dir <2>, result <1>, x<-18>, y<17>
+dir <2>, result <1>, x<-18>, y<18>
+dir <3>, result <1>, x<-19>, y<18>
+dir <3>, result <1>, x<-20>, y<18>
+dir <1>, result <1>, x<-20>, y<17>
+dir <1>, result <1>, x<-20>, y<16>
+dir <1>, result <1>, x<-20>, y<15>
+dir <1>, result <1>, x<-20>, y<14>
+dir <1>, result <1>, x<-20>, y<13>
+dir <1>, result <1>, x<-20>, y<12>
+count 742
+dir <1>, result <1>, x<-20>, y<12>
+dir <1>, result <1>, x<-20>, y<11>
+dir <1>, result <1>, x<-20>, y<10>
+dir <1>, result <1>, x<-20>, y<9>
+dir <1>, result <1>, x<-20>, y<8>
+dir <1>, result <1>, x<-20>, y<7>
+dir <4>, result <1>, x<-20>, y<6>
+dir <4>, result <1>, x<-19>, y<6>
+count 750
+dir <3>, result <1>, x<-19>, y<6>
+dir <3>, result <1>, x<-20>, y<6>
+dir <2>, result <1>, x<-20>, y<7>
+dir <2>, result <1>, x<-20>, y<8>
+dir <2>, result <1>, x<-20>, y<9>
+dir <2>, result <1>, x<-20>, y<10>
+dir <2>, result <1>, x<-20>, y<11>
+dir <2>, result <1>, x<-20>, y<12>
+count 742
+dir <4>, result <1>, x<-19>, y<12>
+dir <4>, result <1>, x<-18>, y<12>
+dir <1>, result <1>, x<-18>, y<11>
+dir <1>, result <1>, x<-18>, y<10>
+dir <1>, result <1>, x<-18>, y<9>
+dir <1>, result <1>, x<-18>, y<8>
+dir <4>, result <1>, x<-17>, y<8>
+dir <4>, result <1>, x<-16>, y<8>
+dir <1>, result <1>, x<-16>, y<7>
+dir <1>, result <1>, x<-16>, y<6>
+dir <4>, result <1>, x<-15>, y<6>
+dir <4>, result <1>, x<-14>, y<6>
+dir <1>, result <1>, x<-14>, y<5>
+dir <1>, result <1>, x<-14>, y<4>
+count 756
+dir <1>, result <1>, x<-14>, y<4>
+dir <1>, result <1>, x<-14>, y<3>
+dir <4>, result <1>, x<-14>, y<2>
+dir <4>, result <1>, x<-13>, y<2>
+count 760
+dir <3>, result <1>, x<-13>, y<2>
+dir <3>, result <1>, x<-14>, y<2>
+dir <2>, result <1>, x<-14>, y<3>
+dir <2>, result <1>, x<-14>, y<4>
+count 756
+dir <4>, result <1>, x<-13>, y<4>
+dir <4>, result <1>, x<-12>, y<4>
+dir <4>, result <1>, x<-11>, y<4>
+dir <4>, result <1>, x<-10>, y<4>
+dir <1>, result <1>, x<-10>, y<3>
+dir <1>, result <1>, x<-10>, y<2>
+dir <1>, result <1>, x<-10>, y<1>
+dir <1>, result <1>, x<-10>, y<0>
+dir <3>, result <1>, x<-11>, y<0>
+dir <3>, result <1>, x<-12>, y<0>
+dir <3>, result <1>, x<-13>, y<0>
+dir <3>, result <1>, x<-14>, y<0>
+dir <1>, result <1>, x<-14>, y<-1>
+dir <1>, result <1>, x<-14>, y<-2>
+count 770
+dir <1>, result <1>, x<-14>, y<-2>
+dir <1>, result <1>, x<-14>, y<-3>
+dir <4>, result <1>, x<-14>, y<-4>
+dir <4>, result <1>, x<-13>, y<-4>
+dir <4>, result <1>, x<-12>, y<-4>
+dir <4>, result <1>, x<-11>, y<-4>
+count 776
+dir <3>, result <1>, x<-11>, y<-4>
+dir <3>, result <1>, x<-12>, y<-4>
+dir <3>, result <1>, x<-13>, y<-4>
+dir <3>, result <1>, x<-14>, y<-4>
+dir <2>, result <1>, x<-14>, y<-3>
+dir <2>, result <1>, x<-14>, y<-2>
+count 770
+dir <4>, result <1>, x<-13>, y<-2>
+dir <4>, result <1>, x<-12>, y<-2>
+dir <4>, result <1>, x<-11>, y<-2>
+dir <4>, result <1>, x<-10>, y<-2>
+dir <4>, result <1>, x<-9>, y<-2>
+dir <4>, result <1>, x<-8>, y<-2>
+count 676
+dir <1>, result <1>, x<-8>, y<-3>
+dir <1>, result <1>, x<-8>, y<-4>
+dir <4>, result <1>, x<-7>, y<-4>
+dir <4>, result <1>, x<-6>, y<-4>
+count 668
+dir <1>, result <1>, x<-6>, y<-5>
+dir <1>, result <1>, x<-6>, y<-6>
+dir <1>, result <1>, x<-6>, y<-7>
+dir <1>, result <1>, x<-6>, y<-8>
+dir <4>, result <1>, x<-5>, y<-8>
+dir <4>, result <1>, x<-4>, y<-8>
+dir <1>, result <1>, x<-4>, y<-9>
+dir <1>, result <1>, x<-4>, y<-10>
+dir <3>, result <1>, x<-5>, y<-10>
+dir <3>, result <1>, x<-6>, y<-10>
+count 678
+dir <1>, result <1>, x<-6>, y<-10>
+dir <1>, result <1>, x<-6>, y<-11>
+dir <3>, result <1>, x<-6>, y<-12>
+dir <3>, result <1>, x<-7>, y<-12>
+dir <1>, result <1>, x<-8>, y<-12>
+dir <1>, result <1>, x<-8>, y<-13>
+dir <3>, result <1>, x<-8>, y<-14>
+dir <3>, result <1>, x<-9>, y<-14>
+dir <2>, result <1>, x<-10>, y<-14>
+dir <2>, result <1>, x<-10>, y<-13>
+dir <3>, result <1>, x<-10>, y<-12>
+dir <3>, result <1>, x<-11>, y<-12>
+dir <2>, result <1>, x<-12>, y<-12>
+dir <2>, result <1>, x<-12>, y<-11>
+dir <4>, result <1>, x<-12>, y<-10>
+dir <4>, result <1>, x<-11>, y<-10>
+dir <2>, result <1>, x<-10>, y<-10>
+dir <2>, result <1>, x<-10>, y<-9>
+count 696
+dir <1>, result <1>, x<-10>, y<-9>
+dir <1>, result <1>, x<-10>, y<-10>
+dir <3>, result <1>, x<-11>, y<-10>
+dir <3>, result <1>, x<-12>, y<-10>
+dir <1>, result <1>, x<-12>, y<-11>
+dir <1>, result <1>, x<-12>, y<-12>
+count 702
+dir <1>, result <1>, x<-12>, y<-12>
+dir <1>, result <1>, x<-12>, y<-13>
+dir <1>, result <1>, x<-12>, y<-14>
+dir <1>, result <1>, x<-12>, y<-15>
+dir <4>, result <1>, x<-12>, y<-16>
+dir <4>, result <1>, x<-11>, y<-16>
+dir <4>, result <1>, x<-10>, y<-16>
+dir <4>, result <1>, x<-9>, y<-16>
+dir <4>, result <1>, x<-8>, y<-16>
+dir <4>, result <1>, x<-7>, y<-16>
+dir <2>, result <1>, x<-6>, y<-16>
+dir <2>, result <1>, x<-6>, y<-15>
+count 714
+dir <1>, result <1>, x<-6>, y<-15>
+dir <1>, result <1>, x<-6>, y<-16>
+count 716
+dir <1>, result <1>, x<-6>, y<-16>
+dir <1>, result <1>, x<-6>, y<-17>
+count 718
+dir <2>, result <1>, x<-6>, y<-17>
+dir <2>, result <1>, x<-6>, y<-16>
+count 716
+dir <3>, result <1>, x<-7>, y<-16>
+dir <3>, result <1>, x<-8>, y<-16>
+dir <3>, result <1>, x<-9>, y<-16>
+dir <3>, result <1>, x<-10>, y<-16>
+dir <3>, result <1>, x<-11>, y<-16>
+dir <3>, result <1>, x<-12>, y<-16>
+dir <2>, result <1>, x<-12>, y<-15>
+dir <2>, result <1>, x<-12>, y<-14>
+dir <2>, result <1>, x<-12>, y<-13>
+dir <2>, result <1>, x<-12>, y<-12>
+count 702
+dir <4>, result <1>, x<-11>, y<-12>
+dir <4>, result <1>, x<-10>, y<-12>
+dir <1>, result <1>, x<-10>, y<-13>
+dir <1>, result <1>, x<-10>, y<-14>
+dir <4>, result <1>, x<-9>, y<-14>
+dir <4>, result <1>, x<-8>, y<-14>
+dir <2>, result <1>, x<-8>, y<-13>
+dir <2>, result <1>, x<-8>, y<-12>
+dir <4>, result <1>, x<-7>, y<-12>
+dir <4>, result <1>, x<-6>, y<-12>
+dir <2>, result <1>, x<-6>, y<-11>
+dir <2>, result <1>, x<-6>, y<-10>
+count 678
+dir <3>, result <1>, x<-7>, y<-10>
+dir <3>, result <1>, x<-8>, y<-10>
+dir <2>, result <1>, x<-8>, y<-9>
+dir <2>, result <1>, x<-8>, y<-8>
+dir <2>, result <1>, x<-8>, y<-7>
+dir <2>, result <1>, x<-8>, y<-6>
+dir <3>, result <1>, x<-9>, y<-6>
+dir <3>, result <1>, x<-10>, y<-6>
+dir <3>, result <1>, x<-11>, y<-6>
+dir <3>, result <1>, x<-12>, y<-6>
+dir <1>, result <1>, x<-12>, y<-7>
+dir <1>, result <1>, x<-12>, y<-8>
+dir <3>, result <1>, x<-13>, y<-8>
+dir <3>, result <1>, x<-14>, y<-8>
+dir <2>, result <1>, x<-14>, y<-7>
+dir <2>, result <1>, x<-14>, y<-6>
+dir <3>, result <1>, x<-15>, y<-6>
+dir <3>, result <1>, x<-16>, y<-6>
+dir <2>, result <1>, x<-16>, y<-5>
+dir <2>, result <1>, x<-16>, y<-4>
+dir <2>, result <1>, x<-16>, y<-3>
+dir <2>, result <1>, x<-16>, y<-2>
+count 608
+dir <2>, result <1>, x<-16>, y<-1>
+dir <2>, result <1>, x<-16>, y<0>
+dir <3>, result <1>, x<-17>, y<0>
+dir <3>, result <1>, x<-18>, y<0>
+dir <2>, result <1>, x<-18>, y<1>
+dir <2>, result <1>, x<-18>, y<2>
+dir <4>, result <1>, x<-17>, y<2>
+dir <4>, result <1>, x<-16>, y<2>
+dir <2>, result <1>, x<-16>, y<3>
+dir <2>, result <1>, x<-16>, y<4>
+dir <3>, result <1>, x<-17>, y<4>
+dir <3>, result <1>, x<-18>, y<4>
+dir <3>, result <1>, x<-19>, y<4>
+dir <3>, result <1>, x<-20>, y<4>
+dir <1>, result <1>, x<-20>, y<3>
+dir <1>, result <1>, x<-20>, y<2>
+dir <1>, result <1>, x<-20>, y<1>
+dir <1>, result <1>, x<-20>, y<0>
+dir <1>, result <1>, x<-20>, y<-1>
+dir <1>, result <1>, x<-20>, y<-2>
+dir <1>, result <1>, x<-20>, y<-3>
+dir <1>, result <1>, x<-20>, y<-4>
+dir <4>, result <1>, x<-19>, y<-4>
+dir <4>, result <1>, x<-18>, y<-4>
+dir <1>, result <1>, x<-18>, y<-5>
+dir <1>, result <1>, x<-18>, y<-6>
+dir <3>, result <1>, x<-19>, y<-6>
+dir <3>, result <1>, x<-20>, y<-6>
+dir <1>, result <1>, x<-20>, y<-7>
+dir <1>, result <1>, x<-20>, y<-8>
+dir <1>, result <1>, x<-20>, y<-9>
+dir <1>, result <1>, x<-20>, y<-10>
+count 640
+dir <1>, result <1>, x<-20>, y<-10>
+dir <1>, result <1>, x<-20>, y<-11>
+dir <4>, result <1>, x<-20>, y<-12>
+dir <4>, result <1>, x<-19>, y<-12>
+dir <1>, result <1>, x<-18>, y<-12>
+dir <1>, result <1>, x<-18>, y<-13>
+dir <1>, result <1>, x<-18>, y<-14>
+dir <1>, result <1>, x<-18>, y<-15>
+dir <3>, result <1>, x<-18>, y<-16>
+dir <3>, result <1>, x<-19>, y<-16>
+dir <2>, result <1>, x<-20>, y<-16>
+dir <2>, result <1>, x<-20>, y<-15>
+count 652
+dir <1>, result <1>, x<-20>, y<-15>
+dir <1>, result <1>, x<-20>, y<-16>
+count 654
+dir <1>, result <1>, x<-20>, y<-16>
+dir <1>, result <1>, x<-20>, y<-17>
+dir <1>, result <1>, x<-20>, y<-18>
+dir <1>, result <1>, x<-20>, y<-19>
+dir <4>, result <1>, x<-20>, y<-20>
+dir <4>, result <1>, x<-19>, y<-20>
+dir <2>, result <1>, x<-18>, y<-20>
+dir <2>, result <1>, x<-18>, y<-19>
+dir <4>, result <1>, x<-18>, y<-18>
+dir <4>, result <1>, x<-17>, y<-18>
+dir <2>, result <1>, x<-16>, y<-18>
+dir <2>, result <1>, x<-16>, y<-17>
+dir <2>, result <1>, x<-16>, y<-16>
+dir <2>, result <1>, x<-16>, y<-15>
+dir <2>, result <1>, x<-16>, y<-14>
+dir <2>, result <1>, x<-16>, y<-13>
+count 670
+dir <1>, result <1>, x<-16>, y<-13>
+dir <1>, result <1>, x<-16>, y<-14>
+dir <1>, result <1>, x<-16>, y<-15>
+dir <1>, result <1>, x<-16>, y<-16>
+dir <1>, result <1>, x<-16>, y<-17>
+dir <1>, result <1>, x<-16>, y<-18>
+count 676
+dir <1>, result <1>, x<-16>, y<-18>
+dir <1>, result <1>, x<-16>, y<-19>
+count 678
+dir <2>, result <1>, x<-16>, y<-19>
+dir <2>, result <1>, x<-16>, y<-18>
+count 676
+dir <3>, result <1>, x<-17>, y<-18>
+dir <3>, result <1>, x<-18>, y<-18>
+dir <1>, result <1>, x<-18>, y<-19>
+dir <1>, result <1>, x<-18>, y<-20>
+dir <3>, result <1>, x<-19>, y<-20>
+dir <3>, result <1>, x<-20>, y<-20>
+dir <2>, result <1>, x<-20>, y<-19>
+dir <2>, result <1>, x<-20>, y<-18>
+dir <2>, result <1>, x<-20>, y<-17>
+dir <2>, result <1>, x<-20>, y<-16>
+count 654
+dir <4>, result <1>, x<-19>, y<-16>
+dir <4>, result <1>, x<-18>, y<-16>
+dir <2>, result <1>, x<-18>, y<-15>
+dir <2>, result <1>, x<-18>, y<-14>
+dir <2>, result <1>, x<-18>, y<-13>
+dir <2>, result <1>, x<-18>, y<-12>
+dir <3>, result <1>, x<-19>, y<-12>
+dir <3>, result <1>, x<-20>, y<-12>
+dir <2>, result <1>, x<-20>, y<-11>
+dir <2>, result <1>, x<-20>, y<-10>
+count 640
+dir <4>, result <1>, x<-19>, y<-10>
+dir <4>, result <1>, x<-18>, y<-10>
+dir <2>, result <1>, x<-18>, y<-9>
+dir <2>, result <1>, x<-18>, y<-8>
+dir <4>, result <1>, x<-17>, y<-8>
+dir <4>, result <1>, x<-16>, y<-8>
+dir <1>, result <1>, x<-16>, y<-9>
+dir <1>, result <1>, x<-16>, y<-10>
+dir <4>, result <1>, x<-15>, y<-10>
+dir <4>, result <1>, x<-14>, y<-10>
+dir <1>, result <1>, x<-14>, y<-11>
+dir <1>, result <1>, x<-14>, y<-12>
+dir <1>, result <1>, x<-14>, y<-13>
+dir <1>, result <1>, x<-14>, y<-14>
+dir <1>, result <1>, x<-14>, y<-15>
+dir <1>, result <1>, x<-14>, y<-16>
+dir <1>, result <1>, x<-14>, y<-17>
+dir <1>, result <1>, x<-14>, y<-18>
+dir <1>, result <1>, x<-14>, y<-19>
+dir <1>, result <1>, x<-14>, y<-20>
+dir <4>, result <1>, x<-13>, y<-20>
+dir <4>, result <1>, x<-12>, y<-20>
+count 550
+dir <2>, result <1>, x<-12>, y<-19>
+dir <2>, result <1>, x<-12>, y<-18>
+dir <4>, result <1>, x<-11>, y<-18>
+dir <4>, result <1>, x<-10>, y<-18>
+dir <4>, result <1>, x<-9>, y<-18>
+dir <4>, result <1>, x<-8>, y<-18>
+dir <1>, result <1>, x<-8>, y<-19>
+dir <1>, result <1>, x<-8>, y<-20>
+dir <4>, result <1>, x<-7>, y<-20>
+dir <4>, result <1>, x<-6>, y<-20>
+dir <4>, result <1>, x<-5>, y<-20>
+dir <4>, result <1>, x<-4>, y<-20>
+dir <4>, result <1>, x<-3>, y<-20>
+dir <4>, result <1>, x<-2>, y<-20>
+dir <4>, result <1>, x<-1>, y<-20>
+dir <4>, result <1>, x<0>, y<-20>
+dir <2>, result <1>, x<0>, y<-19>
+dir <2>, result <1>, x<0>, y<-18>
+dir <4>, result <1>, x<1>, y<-18>
+dir <4>, result <1>, x<2>, y<-18>
+dir <1>, result <1>, x<2>, y<-19>
+dir <1>, result <1>, x<2>, y<-20>
+dir <4>, result <1>, x<3>, y<-20>
+dir <4>, result <1>, x<4>, y<-20>
+dir <4>, result <1>, x<5>, y<-20>
+dir <4>, result <1>, x<6>, y<-20>
+count 520
+dir <2>, result <1>, x<6>, y<-19>
+dir <2>, result <1>, x<6>, y<-18>
+dir <3>, result <1>, x<5>, y<-18>
+dir <3>, result <1>, x<4>, y<-18>
+dir <2>, result <1>, x<4>, y<-17>
+dir <2>, result <1>, x<4>, y<-16>
+dir <3>, result <1>, x<3>, y<-16>
+dir <3>, result <1>, x<2>, y<-16>
+dir <3>, result <1>, x<1>, y<-16>
+dir <3>, result <1>, x<0>, y<-16>
+dir <3>, result <1>, x<-1>, y<-16>
+dir <3>, result <1>, x<-2>, y<-16>
+count 532
+dir <2>, result <1>, x<-2>, y<-16>
+dir <2>, result <1>, x<-2>, y<-15>
+count 534
+dir <1>, result <1>, x<-2>, y<-15>
+dir <1>, result <1>, x<-2>, y<-16>
+count 532
+dir <1>, result <1>, x<-2>, y<-17>
+dir <1>, result <1>, x<-2>, y<-18>
+dir <3>, result <1>, x<-3>, y<-18>
+dir <3>, result <1>, x<-4>, y<-18>
+dir <2>, result <1>, x<-4>, y<-17>
+dir <2>, result <1>, x<-4>, y<-16>
+dir <2>, result <1>, x<-4>, y<-15>
+dir <2>, result <1>, x<-4>, y<-14>
+dir <2>, result <1>, x<-4>, y<-13>
+dir <2>, result <1>, x<-4>, y<-12>
+dir <4>, result <1>, x<-3>, y<-12>
+dir <4>, result <1>, x<-2>, y<-12>
+dir <2>, result <1>, x<-2>, y<-11>
+dir <2>, result <1>, x<-2>, y<-10>
+dir <4>, result <1>, x<-1>, y<-10>
+dir <4>, result <1>, x<0>, y<-10>
+dir <1>, result <1>, x<0>, y<-11>
+dir <1>, result <1>, x<0>, y<-12>
+dir <1>, result <1>, x<0>, y<-13>
+dir <1>, result <1>, x<0>, y<-14>
+dir <4>, result <1>, x<1>, y<-14>
+dir <4>, result <1>, x<2>, y<-14>
+dir <2>, result <1>, x<2>, y<-13>
+dir <2>, result <1>, x<2>, y<-12>
+dir <4>, result <1>, x<3>, y<-12>
+dir <4>, result <1>, x<4>, y<-12>
+dir <2>, result <1>, x<4>, y<-11>
+dir <2>, result <1>, x<4>, y<-10>
+dir <2>, result <1>, x<4>, y<-9>
+dir <2>, result <1>, x<4>, y<-8>
+dir <2>, result <1>, x<4>, y<-7>
+dir <2>, result <1>, x<4>, y<-6>
+dir <2>, result <1>, x<4>, y<-5>
+dir <2>, result <1>, x<4>, y<-4>
+dir <2>, result <1>, x<4>, y<-3>
+dir <2>, result <1>, x<4>, y<-2>
+dir <2>, result <1>, x<4>, y<-1>
+dir <2>, result <1>, x<4>, y<0>
+dir <3>, result <1>, x<3>, y<0>
+dir <3>, result <1>, x<2>, y<0>
+dir <2>, result <1>, x<2>, y<1>
+dir <2>, result <1>, x<2>, y<2>
+count 574
+dir <4>, result <1>, x<3>, y<2>
+dir <4>, result <1>, x<4>, y<2>
+dir <4>, result <1>, x<5>, y<2>
+dir <4>, result <1>, x<6>, y<2>
+dir <1>, result <1>, x<6>, y<1>
+dir <1>, result <1>, x<6>, y<0>
+dir <4>, result <1>, x<7>, y<0>
+dir <4>, result <1>, x<8>, y<0>
+dir <2>, result <1>, x<8>, y<1>
+dir <2>, result <1>, x<8>, y<2>
+dir <2>, result <1>, x<8>, y<3>
+dir <2>, result <1>, x<8>, y<4>
+dir <4>, result <1>, x<9>, y<4>
+dir <4>, result <1>, x<10>, y<4>
+dir <2>, result <1>, x<10>, y<5>
+dir <2>, result <1>, x<10>, y<6>
+dir <2>, result <1>, x<10>, y<7>
+dir <2>, result <1>, x<10>, y<8>
+dir <2>, result <1>, x<10>, y<9>
+dir <2>, result <1>, x<10>, y<10>
+dir <2>, result <1>, x<10>, y<11>
+dir <2>, result <1>, x<10>, y<12>
+count 596
+dir <4>, result <1>, x<11>, y<12>
+dir <4>, result <1>, x<12>, y<12>
+dir <4>, result <1>, x<13>, y<12>
+dir <4>, result <1>, x<14>, y<12>
+dir <2>, result <1>, x<14>, y<13>
+dir <2>, result <1>, x<14>, y<14>
+dir <3>, result <1>, x<13>, y<14>
+dir <3>, result <1>, x<12>, y<14>
+dir <2>, result <1>, x<12>, y<15>
+dir <2>, result <1>, x<12>, y<16>
+dir <3>, result <1>, x<11>, y<16>
+dir <3>, result <1>, x<10>, y<16>
+dir <2>, result <1>, x<10>, y<17>
+dir <2>, result <1>, x<10>, y<18>
+dir <3>, result <1>, x<9>, y<18>
+dir <3>, result <1>, x<8>, y<18>
+dir <1>, result <1>, x<8>, y<17>
+dir <1>, result <1>, x<8>, y<16>
+dir <3>, result <1>, x<7>, y<16>
+dir <3>, result <1>, x<6>, y<16>
+dir <2>, result <1>, x<6>, y<17>
+dir <2>, result <1>, x<6>, y<18>
+dir <3>, result <1>, x<5>, y<18>
+dir <3>, result <1>, x<4>, y<18>
+count 620
+dir <3>, result <1>, x<4>, y<18>
+dir <3>, result <1>, x<3>, y<18>
+count 622
+dir <4>, result <1>, x<3>, y<18>
+dir <4>, result <1>, x<4>, y<18>
+count 620
+dir <1>, result <1>, x<4>, y<17>
+dir <1>, result <1>, x<4>, y<16>
+dir <1>, result <1>, x<4>, y<15>
+dir <1>, result <1>, x<4>, y<14>
+dir <4>, result <1>, x<5>, y<14>
+dir <4>, result <1>, x<6>, y<14>
+dir <4>, result <1>, x<7>, y<14>
+dir <4>, result <1>, x<8>, y<14>
+dir <1>, result <1>, x<8>, y<13>
+dir <1>, result <1>, x<8>, y<12>
+dir <1>, result <1>, x<8>, y<11>
+dir <1>, result <1>, x<8>, y<10>
+dir <3>, result <1>, x<7>, y<10>
+dir <3>, result <1>, x<6>, y<10>
+dir <2>, result <1>, x<6>, y<11>
+dir <2>, result <1>, x<6>, y<12>
+dir <3>, result <1>, x<5>, y<12>
+dir <3>, result <1>, x<4>, y<12>
+dir <3>, result <1>, x<3>, y<12>
+dir <3>, result <1>, x<2>, y<12>
+dir <2>, result <1>, x<2>, y<13>
+dir <2>, result <1>, x<2>, y<14>
+dir <2>, result <1>, x<2>, y<15>
+dir <2>, result <1>, x<2>, y<16>
+dir <3>, result <1>, x<1>, y<16>
+dir <3>, result <1>, x<0>, y<16>
+dir <2>, result <1>, x<0>, y<17>
+dir <2>, result <1>, x<0>, y<18>
+dir <3>, result <1>, x<-1>, y<18>
+dir <3>, result <1>, x<-2>, y<18>
+dir <3>, result <1>, x<-3>, y<18>
+dir <3>, result <1>, x<-4>, y<18>
+dir <3>, result <1>, x<-5>, y<18>
+dir <3>, result <1>, x<-6>, y<18>
+dir <3>, result <1>, x<-7>, y<18>
+dir <3>, result <1>, x<-8>, y<18>
+dir <1>, result <1>, x<-8>, y<17>
+dir <1>, result <1>, x<-8>, y<16>
+dir <4>, result <1>, x<-7>, y<16>
+dir <4>, result <1>, x<-6>, y<16>
+dir <4>, result <1>, x<-5>, y<16>
+dir <4>, result <1>, x<-4>, y<16>
+dir <4>, result <1>, x<-3>, y<16>
+dir <4>, result <1>, x<-2>, y<16>
+dir <1>, result <1>, x<-2>, y<15>
+dir <1>, result <1>, x<-2>, y<14>
+dir <3>, result <1>, x<-3>, y<14>
+dir <3>, result <1>, x<-4>, y<14>
+dir <1>, result <1>, x<-4>, y<13>
+dir <1>, result <1>, x<-4>, y<12>
+dir <1>, result <1>, x<-4>, y<11>
+dir <1>, result <1>, x<-4>, y<10>
+dir <1>, result <1>, x<-4>, y<9>
+dir <1>, result <1>, x<-4>, y<8>
+count 674
+dir <1>, result <1>, x<-4>, y<8>
+dir <1>, result <1>, x<-4>, y<7>
+count 676
+dir <2>, result <1>, x<-4>, y<7>
+dir <2>, result <1>, x<-4>, y<8>
+count 674
+dir <4>, result <1>, x<-3>, y<8>
+dir <4>, result <1>, x<-2>, y<8>
+dir <1>, result <1>, x<-2>, y<7>
+dir <1>, result <1>, x<-2>, y<6>
+dir <1>, result <1>, x<-2>, y<5>
+dir <1>, result <1>, x<-2>, y<4>
+dir <3>, result <1>, x<-3>, y<4>
+dir <3>, result <1>, x<-4>, y<4>
+dir <1>, result <1>, x<-4>, y<3>
+dir <1>, result <1>, x<-4>, y<2>
+dir <3>, result <1>, x<-5>, y<2>
+dir <3>, result <1>, x<-6>, y<2>
+dir <2>, result <1>, x<-6>, y<3>
+dir <2>, result <1>, x<-6>, y<4>
+dir <2>, result <1>, x<-6>, y<5>
+dir <2>, result <1>, x<-6>, y<6>
+dir <2>, result <1>, x<-6>, y<7>
+dir <2>, result <1>, x<-6>, y<8>
+dir <3>, result <1>, x<-7>, y<8>
+dir <3>, result <1>, x<-8>, y<8>
+dir <1>, result <1>, x<-8>, y<7>
+dir <1>, result <1>, x<-8>, y<6>
+dir <1>, result <1>, x<-8>, y<5>
+dir <1>, result <1>, x<-8>, y<4>
+dir <1>, result <1>, x<-8>, y<3>
+dir <1>, result <1>, x<-8>, y<2>
+dir <1>, result <1>, x<-8>, y<1>
+dir <1>, result <1>, x<-8>, y<0>
+dir <4>, result <1>, x<-7>, y<0>
+dir <4>, result <1>, x<-6>, y<0>
+dir <4>, result <1>, x<-5>, y<0>
+dir <4>, result <1>, x<-4>, y<0>
+dir <1>, result <1>, x<-4>, y<-1>
+dir <1>, result <1>, x<-4>, y<-2>
+dir <4>, result <1>, x<-3>, y<-2>
+dir <4>, result <1>, x<-2>, y<-2>
+dir <4>, result <1>, x<-1>, y<-2>
+dir <4>, result <1>, x<0>, y<-2>
+dir <2>, result <1>, x<0>, y<-1>
+dir <2>, result <1>, x<0>, y<0>
+[[17, 18, 411], [14, 18, 414], [12, 18, 416], [16, 16, 418], [16, 14, 420], [18, 12, 424], [14, 10, 430], [12, 8, 434], [12, 2, 440], [18, -2, 450], [8, -2, 452], [6, -2, 454], [8, -4, 454], [8, -6, 456], [16, 2, 460], [6, -10, 462], [14, 4, 464], [4, -14, 468], [6, -14, 470], [8, -12, 478], [8, -16, 482], [8, -18, 484], [18, -6, 490], [12, -14, 508], [12, -16, 510], [6, -20, 520], [16, -18, 528], [18, -16, 532], [-2, -16, 532], [18, -14, 534], [-2, -14, 534], [14, -20, 540], [12, -20, 542], [-10, -20, 548], [-12, -20, 550], [2, 2, 574], [10, 12, 596], [-18, -2, 606], [-16, -2, 608], [4, 18, 620], [2, 18, 622], [-20, -10, 640], [-20, -14, 652], [2, -2, 654], [-20, -16, 654], [2, -4, 656], [0, -4, 658], [-2, -4, 660], [-2, -8, 664], [2, -8, 668], [-6, -4, 668], [2, -10, 670], [-16, -12, 670], [-6, -2, 674], [-4, 8, 674], [-8, -2, 676], [-16, -18, 676], [-4, 6, 676], [-6, -10, 678], [-16, -20, 678], [-10, -8, 696], [-12, -12, 702], [-6, -14, 714], [-6, -16, 716], [-6, -18, 718], [-18, 14, 726], [-16, 14, 728], [-20, 12, 742], [-18, 6, 750], [-14, 4, 756], [-12, 2, 760], [-16, 18, 764], [-14, 16, 768], [-14, -2, 770], [-14, 12, 772], [-10, -4, 776], [-10, 14, 778], [-8, 14, 788], [-10, 8, 788], [-6, 12, 792], [-12, 6, 792], [-8, 10, 796]]
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                              ### # ##### ######### ######### #######                               
+                             #...# #.... #.........#.........# ......#                              
+                             #.#.#.#.#.###.#######.#.###.###.###.###.#                              
+                             #.#...#.#.....# #...#...#...# #.#...# #.#                              
+                             #.###.#.#######.#.#.#####.###.#.#.###.#.#                              
+                             #...#.#.#.......#.#.......#...#.#...#...#                              
+                             #.#.#.#.#.#####.#.#.#######.#.#.#.#.###.#                              
+                             # #.#.#.#.#...# #.# #...# ..#.#.# #...# #                              
+                              ##.#.#.#.#.#.###.###.#.###.#.#.#####.##                               
+                             #...# #.#...#...#...#.#...#.# #.#...#...#                              
+                             #.## ##.#.## ##.###.#.###.#.###.#.#.###.#                              
+                             #...#...#...#.....#...# #.#...#...#...#.#                              
+                             #.#.#.#####.#.###.#####.#.#.#.#######.#.#                              
+                             #.#...#...# #.#...# ....#.#.#.......#.#.#                              
+                             #.#####.#.###.#.#######.#.#.#######.#.#.#                              
+                             #...#...#.....#.#.....#.#.#.# #.....#...#                              
+                              ##.#.#########.#.###.#.#.#.#.#.#######.#                              
+                             #...#.#.... #.....# ....#.#...#.........#                              
+                             #.###.#.#####.#########.#.###.##########                               
+                             #.# ..#........ #.....# #.# ........#.. #                              
+                             #.###.#.#########.###.###.#########.#.##                               
+                             #.#...#.....#.....# #D#...#...# #...#...#                              
+                             #.#.## ####.#.#####.###.###.#.#.#.#####.#                              
+                             #.#...#.. #.#.#...#...#.....#.#...#.....#                              
+                             #.###.#.###.#.#.#.###.#.#####.###.#.#.##                               
+                             #.....#.....#.#.#...#.#.....#...#.# #...#                              
+                              ######.#####.#.###.#.#####.###.#.## ##.#                              
+                             #.. #...# ..#.#.# #.#...#...# #.#...#...#                              
+                             #.###.#####.#.#.#.#.#.#.#.###.#.###.#.##                               
+                             #.#...#.....#...#...#.# #.....#.# #.#...#                              
+                             #.#.###.###.#####.###.###.#####.#.#.###.#                              
+                             #.#.#...#...# ..#.# #.....#...#.#.....#.#                              
+                             #.#.#.###.#####.#.#.#.#####.#.#.#####.#.#                              
+                             #...#.# #.#.....#.#...#.....#.#.....#...#                              
+                             #.###.#.#.#.###.#.###.#.#####.#.###.###.#                              
+                             #.# ..#.#...# ..#...# #.#.....# #...# #.#                              
+                             #.###.#.###.#######.###.#.#### ##.###.#.#                              
+                             #.#...#...#.#.......#...#.#...#...#.....#                              
+                             #.#.###.#.#.#.#######.###.#.#.#.###.####                               
+                             #...# ..#...#.........# ....#...# .... *                               
+                              ### ### ### ######### ##### ### ######                                
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
