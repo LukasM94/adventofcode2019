@@ -6,6 +6,8 @@ list_map = []
 locks = {}
 doors = {}
 count_list = []
+cache = {}
+smallest = 100000
 
 class Point:
     def __init__(self, x, y, c):
@@ -80,10 +82,10 @@ def findRobot():
     for row in map:
         for c in row:
             if Lock.isLock(c):
-                # print("lock <" + str(c) + ">, x <" + str(x) + ">, y <" + str(y) + ">")
+                print("lock <" + str(c) + ">, x <" + str(x) + ">, y <" + str(y) + ">")
                 locks[c] = [x,y]
             if Door.isDoor(c):
-                # print("door <" + str(c) + ">, x <" + str(x) + ">, y <" + str(y) + ">")
+                print("door <" + str(c) + ">, x <" + str(x) + ">, y <" + str(y) + ">")
                 doors[c] = [x,y]
             if Robot.isRobot(c):
                 robot = Robot(x, y)
@@ -118,7 +120,19 @@ def readInput():
 
 def recursive(map, mask, x, y, count, list, used_keys, open_doors):
     global doors
+    # global cache
+    global smallest
     c = map[y][x]
+
+    if count > smallest:
+        return
+
+    # string = str(c) + ''.join(sorted(used_keys))
+    # if string in cache:
+    #     print("optimize")
+    #     count = cache[string]
+    #     return
+
     bit = mask[y][x]
     C = chr(ord(c) - 0x20)
     if bit == 1:
@@ -150,22 +164,37 @@ def getMask(map):
     return mask
 
 def doubleRec(map, count, c, used_keys, open_doors):
-    global count_list
+    global smallest
+    global cache
     C = chr(ord(c) - 0x20)
+
+    string = str(c) + ''.join(sorted(used_keys))
+    if string not in cache or cache[string] < count:
+        cache[string] = count
+
     used_keys = used_keys.copy()
     open_doors = open_doors.copy()
     used_keys.append(c)
     open_doors.append(C)
+
     list = []
     mask = getMask(map)
     [x, y] = locks[c]
-    if len(used_keys) == len(locks):
-        count_list.append(count)
+    if len(used_keys) == len(locks) and count < smallest:
+        smallest = count
+        print("goal: " +  str(count))
+    # else:
+    #     print("fail:" + str(count))
     # print("char <" + str(c) + ">, count <" + str(count) + ">")
     # print("used_keys <" + str(used_keys) + ">")
     # print("open_doors <" + str(open_doors) + ">")
+
     recursive(map, mask, x, y, count, list, used_keys, open_doors)
-    # print(list)
+    if count > smallest:
+        return
+
+    list = sorted(list, key=lambda x: x[0])
+    list = sorted(list, key=lambda x: x[0])
     for entry in list:
         doubleRec(map, entry[0], entry[1], used_keys, open_doors)
 
@@ -183,12 +212,10 @@ def getMaps(map):
 
 def main():
     global map
-    global count_list
     readInput()
     findRobot()
     printMap(map)
     getMaps(map)
-    print(sorted(count_list))
 
 if __name__ == "__main__":
     main()
