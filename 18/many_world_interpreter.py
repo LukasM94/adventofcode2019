@@ -168,9 +168,20 @@ def doubleRec(map, count, c, used_keys, open_doors):
     global cache
     C = chr(ord(c) - 0x20)
 
-    string = str(c) + ''.join(sorted(used_keys))
-    if string not in cache or cache[string] < count:
+    string = str(c) + ',' + ''.join(sorted(used_keys))
+    # print(string + ", " + str(count))
+    if string in cache:
+        if cache[string] > count:
+            # print("hit")
+            cache[string] = count
+        else:
+            # print("get")
+            count = cache[string]
+            return
+    else:
+        # print("add")
         cache[string] = count
+
 
     used_keys = used_keys.copy()
     open_doors = open_doors.copy()
@@ -182,7 +193,6 @@ def doubleRec(map, count, c, used_keys, open_doors):
     [x, y] = locks[c]
     if len(used_keys) == len(locks) and count < smallest:
         smallest = count
-        print("goal: " +  str(count))
     # else:
     #     print("fail:" + str(count))
     # print("char <" + str(c) + ">, count <" + str(count) + ">")
@@ -212,10 +222,12 @@ def getMaps(map):
 
 def main():
     global map
+    global smallest
     readInput()
     findRobot()
     printMap(map)
     getMaps(map)
+    print(smallest)
 
 if __name__ == "__main__":
     main()
