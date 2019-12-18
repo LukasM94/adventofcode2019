@@ -70,16 +70,16 @@ def readInput():
         map.append(row[:-1])
     file.close()
 
-def recursive(map, mask, x, y, count, list, used_keys, open_doors):
+def recursive(map, mask, robot, count, list, used_keys, open_doors):
     global doors
     # global cache
     global smallest
-    c = map[y][x]
+    c = map[robot.y_][robot.x_]
 
     if count > smallest:
         return
 
-    bit = mask[y][x]
+    bit = mask[robot.y_][robot.x_]
     C = chr(ord(c) - 0x20)
     if bit == 1:
         return
@@ -96,11 +96,19 @@ def recursive(map, mask, x, y, count, list, used_keys, open_doors):
                 return
             else:
                 return
-    mask[y][x] = 1
-    recursive(map, mask, x, y - 1, count + 1, list, used_keys, open_doors)
-    recursive(map, mask, x + 1, y, count + 1, list, used_keys, open_doors)
-    recursive(map, mask, x, y + 1, count + 1, list, used_keys, open_doors)
-    recursive(map, mask, x - 1, y, count + 1, list, used_keys, open_doors)
+    mask[robot.y_][robot.x_] = 1
+    robot.y_ -= 1
+    recursive(map, mask, robot, count + 1, list, used_keys, open_doors)
+    robot.y_ += 1
+    robot.x_ += 1
+    recursive(map, mask, robot, count + 1, list, used_keys, open_doors)
+    robot.x_ -= 1
+    robot.y_ += 1
+    recursive(map, mask, robot, count + 1, list, used_keys, open_doors)
+    robot.y_ -= 1
+    robot.x_ -= 1
+    recursive(map, mask, robot, count + 1, list, used_keys, open_doors)
+    robot.x_ += 1
 
 def getMask(map):
     mask = []
@@ -109,7 +117,7 @@ def getMask(map):
         mask.append(row)
     return mask
 
-def doubleRec(map, count, c, used_keys, open_doors):
+def doubleRec(map, count, c, used_keys, open_doors, robot):
     global smallest
     global cache
     C = chr(ord(c) - 0x20)
@@ -131,33 +139,33 @@ def doubleRec(map, count, c, used_keys, open_doors):
 
     list = []
     mask = getMask(map)
-    [x, y] = locks[c]
+    [robot.x_, robot.y_] = locks[c]
     if len(used_keys) == len(locks) and count < smallest:
         smallest = count
     # print("char <" + str(c) + ">, count <" + str(count) + ">")
     # print("used_keys <" + str(used_keys) + ">")
     # print("open_doors <" + str(open_doors) + ">")
 
-    recursive(map, mask, x, y, count, list, used_keys, open_doors)
+    recursive(map, mask, robot, count, list, used_keys, open_doors)
     if count > smallest:
         return
 
     list = sorted(list, key=lambda x: x[0])
-    list = sorted(list, key=lambda x: x[0])
     for entry in list:
-        doubleRec(map, entry[0], entry[1], used_keys, open_doors)
+        doubleRec(map, entry[0], entry[1], used_keys, open_doors, robot)
 
-def getMaps(map):
+def doPart1(map):
     global robot
     list = []
     mask = getMask(map)
     count = 0
     used_keys = []
     open_doors = []
-    recursive(map, mask, robot.x_, robot.y_, count, list, used_keys, open_doors)
+
+    recursive(map, mask, robot, count, list, used_keys, open_doors)
     # print(list)
     for entry in list:
-        doubleRec(map, entry[0], entry[1], used_keys, open_doors)
+        doubleRec(map, entry[0], entry[1], used_keys, open_doors, robot)
 
 def main():
     global map
@@ -165,7 +173,7 @@ def main():
     readInput()
     findAll()
     printMap(map)
-    getMaps(map)
+    doPart1(map)
     print(smallest)
 
 if __name__ == "__main__":
