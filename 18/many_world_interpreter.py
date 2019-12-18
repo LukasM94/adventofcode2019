@@ -128,32 +128,11 @@ def getPathList():
     global map
     global robot
     search(robot.x_, robot.y_, 0, robot, [])
-#
-# def printPathList():
-#     global pathList
-#     for path in pathList:
-#         print(path)
-#
-# def doPart1(point):
-#     print(point)
-#     for path in pathList:
-#         if path.point1_ == point:
-#             doors_left = []
-#             # for door in path.point2_.opened_doors_:
-#             #     print(door)
-#             # for door in path.doors_:
-#             #     print(door)
-#             doors_left = list(filter(lambda x: x not in path.point2_.opened_doors_, path.doors_))
-#             for door in doors_left:
-#                 print(door)
-#             if doors_left == []:
-#                 door = Door(-1, -1, chr(path.point2_.name_ - 0x20))
-#                 path.point2_.opened_doors_.append(door)
-#                 # print(path)
-#                 doPart1(path.point2_)
 
-def doPart1(point):
-    print(point)
+def printPathList():
+    global pathList
+    for path in pathList:
+        print(path)
 
 
 def main():
@@ -161,10 +140,7 @@ def main():
     printMap()
     findAll()
     getPathList()
-    # printPathList()
-    # print("=================================")
-    # doPart1(robot)
-    # print("=================================")
+    printPathList()
 
 if __name__ == "__main__":
     main()
