@@ -2,8 +2,10 @@
 
 map = []
 robot = []
-pathList = []
-list = []
+list_map = []
+locks = {}
+doors = {}
+count_list = []
 
 class Point:
     def __init__(self, x, y, c):
@@ -13,7 +15,7 @@ class Point:
         self.opened_doors_ = []
 
     def validPoint(c):
-        return ord(c) != ord('#') and ord(c) != ord('x')
+        return ord(c) != ord('#')
 
     def __eq__(self, other):
         return self.name_ == other.name_
@@ -70,26 +72,38 @@ class Path:
             string += "  door <" + str(door) + ">\n"
         return string[:-1]
 
-def findAll():
+def findRobot():
     global map
-    global lockList
-    global doorList
     global robot
     x = 0
     y = 0
     for row in map:
         for c in row:
+            if Lock.isLock(c):
+                # print("lock <" + str(c) + ">, x <" + str(x) + ">, y <" + str(y) + ">")
+                locks[c] = [x,y]
+            if Door.isDoor(c):
+                # print("door <" + str(c) + ">, x <" + str(x) + ">, y <" + str(y) + ">")
+                doors[c] = [x,y]
             if Robot.isRobot(c):
                 robot = Robot(x, y)
+                map[y][x] = '.'
             x += 1
         y += 1
         x = 0
 
-def printMap():
-    global map
+def printMap(map):
+    global robot
     print("=================================")
+    y = 0
     for row in map:
-        print(''.join(row))
+        if y == robot.y_:
+            temp = row.copy()
+            temp[robot.x_] = "@"
+            print(''.join(temp))
+        else:
+            print(''.join(row))
+        y += 1
     print("=================================")
 
 def readInput():
@@ -100,47 +114,81 @@ def readInput():
         for c in line:
             row.append(c)
         map.append(row[:-1])
+    file.close()
 
-def search(x, y, count, point, doors):
-    global map
-    global pathList
+def recursive(map, mask, x, y, count, list, used_keys, open_doors):
+    global doors
     c = map[y][x]
-    if Point.validPoint(c) == False:
-        return None
-    map[y][x] = 'x'
-    # printMap()
-    if Lock.isLock(c) == True:
-        path = Path(point)
-        path.addPoint2(Lock(x, y, c), count)
-        path.doors_ = doors
-        doors = []
-        pathList.append(path)
-        count = 0
-        point = Lock(x, y, c)
-    elif Door.isDoor(c) == True:
-        doors.append(Door(x, y, c))
-    search(x, y - 1, count + 1, point, doors)
-    search(x + 1, y, count + 1, point, doors)
-    search(x, y + 1, count + 1, point, doors)
-    search(x - 1, y, count + 1, point, doors)
+    bit = mask[y][x]
+    C = chr(ord(c) - 0x20)
+    if bit == 1:
+        return
+    if c != '.':
+        if c == '#':
+            return
+        # print("    char <" + str(c) + ">, x <" + str(x) + ">, y <" + str(y) + ">")
+        if c not in used_keys and c not in open_doors:
+            # print("    used_keys <" + str(used_keys) + ">")
+            # print("    open_doors <" + str(open_doors) + ">")
+            # print("    C <" + str(C) + "> or c <" + str(c) + "> not in list")
+            if Lock.isLock(c) == True:
+                list.append([count, c])
+                return
+            else:
+                return
+    mask[y][x] = 1
+    recursive(map, mask, x, y - 1, count + 1, list, used_keys, open_doors)
+    recursive(map, mask, x + 1, y, count + 1, list, used_keys, open_doors)
+    recursive(map, mask, x, y + 1, count + 1, list, used_keys, open_doors)
+    recursive(map, mask, x - 1, y, count + 1, list, used_keys, open_doors)
 
-def getPathList():
-    global map
+def getMask(map):
+    mask = []
+    for line in map:
+        row = [0] * len(line)
+        mask.append(row)
+    return mask
+
+def doubleRec(map, count, c, used_keys, open_doors):
+    global count_list
+    C = chr(ord(c) - 0x20)
+    used_keys = used_keys.copy()
+    open_doors = open_doors.copy()
+    used_keys.append(c)
+    open_doors.append(C)
+    list = []
+    mask = getMask(map)
+    [x, y] = locks[c]
+    if len(used_keys) == len(locks):
+        count_list.append(count)
+    # print("char <" + str(c) + ">, count <" + str(count) + ">")
+    # print("used_keys <" + str(used_keys) + ">")
+    # print("open_doors <" + str(open_doors) + ">")
+    recursive(map, mask, x, y, count, list, used_keys, open_doors)
+    # print(list)
+    for entry in list:
+        doubleRec(map, entry[0], entry[1], used_keys, open_doors)
+
+def getMaps(map):
     global robot
-    search(robot.x_, robot.y_, 0, robot, [])
-
-def printPathList():
-    global pathList
-    for path in pathList:
-        print(path)
-
+    list = []
+    mask = getMask(map)
+    count = 0
+    used_keys = []
+    open_doors = []
+    recursive(map, mask, robot.x_, robot.y_, count, list, used_keys, open_doors)
+    # print(list)
+    for entry in list:
+        doubleRec(map, entry[0], entry[1], used_keys, open_doors)
 
 def main():
+    global map
+    global count_list
     readInput()
-    printMap()
-    findAll()
-    getPathList()
-    printPathList()
+    findRobot()
+    printMap(map)
+    getMaps(map)
+    print(sorted(count_list))
 
 if __name__ == "__main__":
     main()
