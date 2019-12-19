@@ -193,8 +193,9 @@ def doubleRec2(map, c, used_keys, open_doors, robots, robot_number):
     robot = robots[robot_number]
     C = chr(ord(c) - 0x20)
 
-    string = str(c) + ',' + str(robot_number) + ',' + ''.join(sorted(used_keys))
+    string = '>>' + str(c) + ',' + str(robot_number) + ',' + ''.join(sorted(used_keys))
     # print("cache[string] > robots[robot_number].count_")
+    # print(string)
     if string in cache:
         # print(str(cache[string]) + " >= " + str(robots[robot_number].count_))
         if cache[string] >= robot.count_:
@@ -203,7 +204,6 @@ def doubleRec2(map, c, used_keys, open_doors, robots, robot_number):
         else:
             # print("optimized")
             robot.count_ = cache[string]
-            print(string)
             return
     else:
         # print("set")
@@ -291,7 +291,7 @@ def doubleRec2(map, c, used_keys, open_doors, robots, robot_number):
     #     print(r)
     # for r in robots3:
     #     print(r)
-    next_list = sorted(next_list, key=lambda x: x[0])
+    next_list = sorted(next_list, key=lambda x: x[4])
     for entry in next_list:
         entry[2][entry[3]].count_ = entry[0]
         doubleRec2(map, entry[1], used_keys, open_doors, entry[2], entry[3])
@@ -330,7 +330,7 @@ def recursive2(map, mask, robots, robot_number, list, used_keys, open_doors):
                 next_robots = []
                 for r in robots:
                     next_robots.append(r.copy())
-                list.append([robot.count_, c, next_robots, robot_number])
+                list.append([robot.count_, c, next_robots, robot_number, count])
                 return
             else:
                 return
@@ -418,7 +418,7 @@ def doPart2(map, robots):
     #     print(r)
     # for r in robots3:
     #     print(r)
-    next_list = sorted(next_list, key=lambda x: x[0])
+    next_list = sorted(next_list, key=lambda x: x[4])
     for entry in next_list:
         entry[2][entry[3]].count_ = entry[0]
         doubleRec2(map, entry[1], used_keys, open_doors, entry[2], entry[3])
