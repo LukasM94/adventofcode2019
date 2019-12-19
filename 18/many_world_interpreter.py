@@ -228,32 +228,32 @@ def doubleRec2(map, count, c, used_keys, open_doors, robot):
     # print("used_keys <" + str(used_keys) + ">")
     # print("open_doors <" + str(open_doors) + ">")
 
-    # print("=================start======================")
-    # print("============================================")
-    # print(robots[0])
+    print("=================start======================")
+    print("============================================")
+    print(robots[0])
     list = []
     recursive2(map, mask, robots[0], count, list, used_keys, open_doors)
     next_list.extend(list)
-    # print(robots[0])
-    # print("============================================")
-    # print(robots[1])
+    print(robots[0])
+    print("============================================")
+    print(robots[1])
     list = []
     recursive2(map, mask, robots[1], count, list, used_keys, open_doors)
     next_list.extend(list)
-    # print(robots[1])
-    # print("============================================")
-    # print(robots[2])
+    print(robots[1])
+    print("============================================")
+    print(robots[2])
     list = []
     recursive2(map, mask, robots[2], count, list, used_keys, open_doors)
     next_list.extend(list)
-    # print(robots[2])
-    # print("============================================")
-    # print(robots[3])
+    print(robots[2])
+    print("============================================")
+    print(robots[3])
     list = []
     recursive2(map, mask, robots[3], count, list, used_keys, open_doors)
     next_list.extend(list)
-    # print(robots[3])
-    # print("============================================")
+    print(robots[3])
+    print("============================================")
 
     if count > smallest:
         robots[0] = local_robot0
@@ -270,7 +270,7 @@ def doubleRec2(map, count, c, used_keys, open_doors, robot):
     robots[2] = local_robot2
     robots[3] = local_robot3
 
-    # print("===================end======================")
+    print("===================end======================")
 
 def recursive2(map, mask, robot, count, list, used_keys, open_doors):
     global smallest
@@ -286,13 +286,12 @@ def recursive2(map, mask, robot, count, list, used_keys, open_doors):
     if c != '.':
         if c == '#':
             return
-        # print("  char <" + str(c) + ">, x <" + str(robot.x_) + ">, y <" + str(robot.y_) + ">")
+        print("  char <" + str(c) + ">, x <" + str(robot.x_) + ">, y <" + str(robot.y_) + ">")
         if c not in used_keys and c not in open_doors:
-            # print("    used_keys <" + str(used_keys) + ">")
-            # print("    open_doors <" + str(open_doors) + ">")
-            # print("    Char <" + str(C) + "> or char <" + str(c) + "> not in list")
+            print("    used_keys <" + str(used_keys) + ">")
+            print("    open_doors <" + str(open_doors) + ">")
             if isLock(c) == True:
-                # print("      True")
+                print("      True")
                 list.append([count, c, robot, used_keys, open_doors])
                 return
             else:
