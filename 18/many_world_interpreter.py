@@ -193,20 +193,21 @@ def doubleRec2(map, c, used_keys, open_doors, robots, robot_number):
     robot = robots[robot_number]
     C = chr(ord(c) - 0x20)
 
-    # string = str(c) + ',' + str(robot.name_) + ',' + ''.join(sorted(used_keys))
+    string = str(c) + ',' + str(robot_number) + ',' + ''.join(sorted(used_keys))
     # print("cache[string] > robots[robot_number].count_")
-    # if string in cache:
-    #     print(str(cache[string]) + " >= " + str(robots[robot_number].count_))
-    #     if cache[string] >= robot.count_:
-    #         print("adjusted")
-    #         cache[string] = robot.count_
-    #     else:
-    #         robot.count_ = cache[string]
-    #         print(string)
-    #         return
-    # else:
-    #     print("set")
-    #     cache[string] = robot.count_
+    if string in cache:
+        # print(str(cache[string]) + " >= " + str(robots[robot_number].count_))
+        if cache[string] >= robot.count_:
+            # print("adjusted")
+            cache[string] = robot.count_
+        else:
+            # print("optimized")
+            robot.count_ = cache[string]
+            print(string)
+            return
+    else:
+        # print("set")
+        cache[string] = robot.count_
 
     used_keys = used_keys.copy()
     open_doors = open_doors.copy()
@@ -227,72 +228,75 @@ def doubleRec2(map, c, used_keys, open_doors, robots, robot_number):
     count += robots[1].count_
     count += robots[2].count_
     count += robots[3].count_
+
     if len(used_keys) == len(locks) and count < smallest:
-        print(count)
         smallest = count
         print("total count is " + str(count))
-    # else:
-    #     print("current count is " + str(count))
+
+    if count > smallest:
+        # print("too large")
+        return
 
     list = []
     next_list = []
     mask = getMask(map)
     [robot.x_, robot.y_] = locks[c]
-    printMap(map, robots)
-    print(''.join(used_keys))
-    print(robot)
+    if __debug__: printMap(map, robots)
+    if __debug__: print(''.join(used_keys))
+    if __debug__: print(robot)
 
-    print("char <" + str(c) + ">, count <" + str(count) + ">")
-    print("used_keys <" + str(used_keys) + ">")
-    print("open_doors <" + str(open_doors) + ">")
+    if __debug__: print("char <" + str(c) + ">, count <" + str(count) + ">")
+    if __debug__: print("used_keys <" + str(used_keys) + ">")
+    if __debug__: print("open_doors <" + str(open_doors) + ">")
 
-    print("=================start======================")
-    print("============================================")
-    print(robots0[0])
+    if __debug__: print("=================start======================")
+    if __debug__: print("============================================")
+    if __debug__: print(robots0[0])
     list = []
     recursive2(map, mask, robots0, 0, list, used_keys, open_doors)
     next_list.extend(list)
 
-    print(robots0[0])
-    print("============================================")
-    print(robots1[1])
+    if __debug__: print(robots0[0])
+    if __debug__: print("============================================")
+    if __debug__: print(robots1[1])
     list = []
     recursive2(map, mask, robots1, 1, list, used_keys, open_doors)
     next_list.extend(list)
 
-    print(robots1[1])
-    print("============================================")
-    print(robots2[2])
+    if __debug__: print(robots1[1])
+    if __debug__: print("============================================")
+    if __debug__: print(robots2[2])
     list = []
     recursive2(map, mask, robots2, 2, list, used_keys, open_doors)
     next_list.extend(list)
 
-    print(robots2[2])
-    print("============================================")
-    print(robots3[3])
+    if __debug__: print(robots2[2])
+    if __debug__: print("============================================")
+    if __debug__: print(robots3[3])
     list = []
     recursive2(map, mask, robots3, 3, list, used_keys, open_doors)
     next_list.extend(list)
 
-    print(robots3[3])
-    print("============================================")
+    if __debug__: print(robots3[3])
+    if __debug__: print("============================================")
 
-    for r in robots:
-        print(r)
-    for r in robots0:
-        print(r)
-    for r in robots1:
-        print(r)
-    for r in robots2:
-        print(r)
-    for r in robots3:
-        print(r)
+    if __debug__:
+        for r in robots:
+            print(r)
+    # for r in robots0:
+    #     print(r)
+    # for r in robots1:
+    #     print(r)
+    # for r in robots2:
+    #     print(r)
+    # for r in robots3:
+    #     print(r)
     next_list = sorted(next_list, key=lambda x: x[0])
     for entry in next_list:
         entry[2][entry[3]].count_ = entry[0]
         doubleRec2(map, entry[1], used_keys, open_doors, entry[2], entry[3])
 
-    print("===================end======================")
+    if __debug__: print("===================end======================")
 
 def recursive2(map, mask, robots, robot_number, list, used_keys, open_doors):
     global smallest
@@ -316,14 +320,17 @@ def recursive2(map, mask, robots, robot_number, list, used_keys, open_doors):
     if c != '.':
         if c == '#':
             return
-        print("  char <" + str(c) + ">, x <" + str(robot.x_) + ">, y <" + str(robot.y_) + ">")
+        if __debug__: print("  char <" + str(c) + ">, x <" + str(robot.x_) + ">, y <" + str(robot.y_) + ">")
         if c not in used_keys and c not in open_doors:
-            print("    used_keys <" + str(used_keys) + ">")
-            print("    open_doors <" + str(open_doors) + ">")
+            if __debug__: print("    used_keys <" + str(used_keys) + ">")
+            if __debug__: print("    open_doors <" + str(open_doors) + ">")
             if isLock(c) == True:
-                print("      True")
-                print("      " + str(robot))
-                list.append([robot.count_, c, robots, robot_number])
+                if __debug__: print("      True")
+                if __debug__: print("      " + str(robot))
+                next_robots = []
+                for r in robots:
+                    next_robots.append(r.copy())
+                list.append([robot.count_, c, next_robots, robot_number])
                 return
             else:
                 return
@@ -348,6 +355,7 @@ def recursive2(map, mask, robots, robot_number, list, used_keys, open_doors):
     recursive2(map, mask, robots, robot_number, list, used_keys, open_doors)
     robot.count_ -= 1
     robot.x_ += 1
+    return
 
 def doPart2(map, robots):
     next_list = []
@@ -373,42 +381,43 @@ def doPart2(map, robots):
         # print("too large")
         return
 
-    print("===================Init=====================")
-    print(robots0[0])
+    if __debug__: print("===================Init=====================")
+    if __debug__: print(robots0[0])
     list = []
     recursive2(map, mask, robots0, 0, list, used_keys, open_doors)
     next_list.extend(list)
-    print(robots0[0])
-    print("============================================")
-    print(robots1[1])
+    if __debug__: print(robots0[0])
+    if __debug__: print("============================================")
+    if __debug__: print(robots1[1])
     list = []
     recursive2(map, mask, robots1, 1, list, used_keys, open_doors)
     next_list.extend(list)
-    print(robots1[2])
-    print("============================================")
-    print(robots2[2])
+    if __debug__: print(robots1[2])
+    if __debug__: print("============================================")
+    if __debug__: print(robots2[2])
     list = []
     recursive2(map, mask, robots2, 2, list, used_keys, open_doors)
     next_list.extend(list)
-    print(robots2[2])
-    print("============================================")
-    print(robots3[3])
+    if __debug__: print(robots2[2])
+    if __debug__: print("============================================")
+    if __debug__: print(robots3[3])
     list = []
     recursive2(map, mask, robots3, 3, list, used_keys, open_doors)
     next_list.extend(list)
-    print(robots3[3])
-    print("===================End======================")
+    if __debug__: print(robots3[3])
+    if __debug__: print("===================End======================")
 
-    for r in robots:
-        print(r)
-    for r in robots0:
-        print(r)
-    for r in robots1:
-        print(r)
-    for r in robots2:
-        print(r)
-    for r in robots3:
-        print(r)
+    if __debug__:
+        for r in robots:
+            print(r)
+    # for r in robots0:
+    #     print(r)
+    # for r in robots1:
+    #     print(r)
+    # for r in robots2:
+    #     print(r)
+    # for r in robots3:
+    #     print(r)
     next_list = sorted(next_list, key=lambda x: x[0])
     for entry in next_list:
         entry[2][entry[3]].count_ = entry[0]
