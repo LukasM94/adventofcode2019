@@ -186,17 +186,22 @@ def doPart1(map):
 def doubleRec2(map, count, c, used_keys, open_doors, robot):
     global smallest
     global cache
+    global robots
     C = chr(ord(c) - 0x20)
+    local_robot0 = Robot(robots[0].x_, robots[0].y_, robots[0].count_)
+    local_robot1 = Robot(robots[1].x_, robots[1].y_, robots[1].count_)
+    local_robot2 = Robot(robots[2].x_, robots[2].y_, robots[2].count_)
+    local_robot3 = Robot(robots[3].x_, robots[3].y_, robots[3].count_)
 
-    # string = str(c) + ',' + ''.join(sorted(used_keys))
-    # if string in cache:
-    #     if cache[string] > count:
-    #         cache[string] = count
-    #     else:
-    #         count = cache[string]
-    #         return
-    # else:
-    #     cache[string] = count
+    string = str(c) + ',' + ''.join(sorted(used_keys))
+    if string in cache:
+        if cache[string] > count:
+            cache[string] = count
+        else:
+            count = cache[string]
+            return
+    else:
+        cache[string] = count
 
     used_keys = used_keys.copy()
     open_doors = open_doors.copy()
@@ -213,40 +218,51 @@ def doubleRec2(map, count, c, used_keys, open_doors, robot):
     # print("used_keys <" + str(used_keys) + ">")
     # print("open_doors <" + str(open_doors) + ">")
 
-    print("============================================")
-    print(robots[0])
+    # print("=================start======================")
+    # print("============================================")
+    # print(robots[0])
     list = []
     recursive2(map, mask, robots[0], count, list, used_keys, open_doors)
-    print("============================================")
-    print(robots[1])
+    # print(robots[0])
+    # print("============================================")
+    # print(robots[1])
     next_list.extend(list)
     list = []
     recursive2(map, mask, robots[1], count, list, used_keys, open_doors)
-    print("============================================")
-    print(robots[2])
+    # print(robots[1])
+    # print("============================================")
+    # print(robots[2])
     next_list.extend(list)
     list = []
     recursive2(map, mask, robots[2], count, list, used_keys, open_doors)
-    print("============================================")
-    print(robots[3])
+    # print(robots[2])
+    # print("============================================")
+    # print(robots[3])
     next_list.extend(list)
     list = []
     recursive2(map, mask, robots[3], count, list, used_keys, open_doors)
-    # if count > smallest:
-    #     return
+    # print(robots[3])
+    # print("============================================")
+    if count > smallest:
+        return
     next_list.extend(list)
     printMap(map)
 
     next_list = sorted(next_list, key=lambda x: x[0])
     for entry in next_list:
         doubleRec2(map, entry[0], entry[1], used_keys, open_doors, entry[2])
+    robots[0] = local_robot0
+    robots[1] = local_robot1
+    robots[2] = local_robot2
+    robots[3] = local_robot3
+    # print("===================end======================")
 
 def recursive2(map, mask, robot, count, list, used_keys, open_doors):
     global smallest
     c = map[robot.y_][robot.x_]
 
-    # if count > smallest:
-    #     return
+    if count > smallest:
+        return
 
     bit = mask[robot.y_][robot.x_]
     C = chr(ord(c) - 0x20)
@@ -255,13 +271,13 @@ def recursive2(map, mask, robot, count, list, used_keys, open_doors):
     if c != '.':
         if c == '#':
             return
-        print("  char <" + str(c) + ">, x <" + str(robot.x_) + ">, y <" + str(robot.y_) + ">")
+        # print("  char <" + str(c) + ">, x <" + str(robot.x_) + ">, y <" + str(robot.y_) + ">")
         if c not in used_keys and c not in open_doors:
-            print("    used_keys <" + str(used_keys) + ">")
-            print("    open_doors <" + str(open_doors) + ">")
+            # print("    used_keys <" + str(used_keys) + ">")
+            # print("    open_doors <" + str(open_doors) + ">")
             # print("    Char <" + str(C) + "> or char <" + str(c) + "> not in list")
             if isLock(c) == True:
-                print("      True")
+                # print("      True")
                 list.append([count, c, robot])
                 return
             else:
@@ -288,23 +304,23 @@ def doPart2(map):
     count = 0
     used_keys = []
     open_doors = []
-    print("============================================")
-    print(robots[0])
+    # print("============================================")
+    # print(robots[0])
     recursive2(map, mask, robots[0], count, list, used_keys, open_doors)
     next_list.extend(list)
     list = []
-    print("============================================")
-    print(robots[1])
+    # print("============================================")
+    # print(robots[1])
     recursive2(map, mask, robots[1], count, list, used_keys, open_doors)
     next_list.extend(list)
     list = []
-    print("============================================")
-    print(robots[2])
+    # print("============================================")
+    # print(robots[2])
     recursive2(map, mask, robots[2], count, list, used_keys, open_doors)
     next_list.extend(list)
     list = []
-    print("============================================")
-    print(robots[3])
+    # print("============================================")
+    # print(robots[3])
     recursive2(map, mask, robots[3], count, list, used_keys, open_doors)
     next_list.extend(list)
 
