@@ -203,7 +203,7 @@ def doubleRec2(map, c, used_keys, open_doors, robot, robot_number):
             cache[string] = robots[robot_number].count_
         else:
             robots[robot_number].count_ = cache[string]
-            print(string)
+            # print(string)
             return
     else:
         # print("set")
@@ -214,6 +214,14 @@ def doubleRec2(map, c, used_keys, open_doors, robot, robot_number):
     used_keys.append(c)
     open_doors.append(C)
 
+    count = robots[0].count_
+    count += robots[1].count_
+    count += robots[2].count_
+    count += robots[3].count_
+    if len(used_keys) == len(locks) and count < smallest:
+        print(count)
+        smallest = count
+
     list = []
     next_list = []
     mask = getMask(map)
@@ -222,13 +230,6 @@ def doubleRec2(map, c, used_keys, open_doors, robot, robot_number):
     # printMap(map)
     # print(''.join(used_keys))
     # print(robot)
-    
-    count = robots[0].count_
-    count += robots[1].count_
-    count += robots[2].count_
-    count += robots[3].count_
-    if len(used_keys) == len(locks) and count < smallest:
-        smallest = count
     #     print("total count is " + str(count))
     # else:
     #     print("current count is " + str(count))
@@ -241,56 +242,8 @@ def doubleRec2(map, c, used_keys, open_doors, robot, robot_number):
     # print("============================================")
     # print(robots[0])
     list = []
-    recursive2(map, mask, robots[0], 0, list, used_keys, open_doors)
-    next_list.extend(list)
-
-    count = robots[0].count_
-    count += robots[1].count_
-    count += robots[2].count_
-    count += robots[3].count_
-    if len(used_keys) == len(locks) and count < smallest:
-        smallest = count
-    # print(robots[0])
-    # print("============================================")
-    # print(robots[1])
-    list = []
-    recursive2(map, mask, robots[1], 1, list, used_keys, open_doors)
-    next_list.extend(list)
-
-    count = robots[0].count_
-    count += robots[1].count_
-    count += robots[2].count_
-    count += robots[3].count_
-    if len(used_keys) == len(locks) and count < smallest:
-        smallest = count
-    # print(robots[1])
-    # print("============================================")
-    # print(robots[2])
-    list = []
-    recursive2(map, mask, robots[2], 2, list, used_keys, open_doors)
-    next_list.extend(list)
-
-    count = robots[0].count_
-    count += robots[1].count_
-    count += robots[2].count_
-    count += robots[3].count_
-    if len(used_keys) == len(locks) and count < smallest:
-        smallest = count
-    # print(robots[2])
-    # print("============================================")
-    # print(robots[3])
-    list = []
     recursive2(map, mask, robots[3], 3, list, used_keys, open_doors)
     next_list.extend(list)
-
-    count = robots[0].count_
-    count += robots[1].count_
-    count += robots[2].count_
-    count += robots[3].count_
-    if len(used_keys) == len(locks) and count < smallest:
-        smallest = count
-    # print(robots[3])
-    # print("============================================")
 
     count = robots[0].count_
     count += robots[1].count_
@@ -301,9 +254,70 @@ def doubleRec2(map, c, used_keys, open_doors, robot, robot_number):
         robots[1] = local_robot1
         robots[2] = local_robot2
         robots[3] = local_robot3
-        print("too large")
+        # print("too large")
         return
 
+    # print(robots[0])
+    # print("============================================")
+    # print(robots[1])
+    list = []
+    recursive2(map, mask, robots[2], 2, list, used_keys, open_doors)
+    next_list.extend(list)
+
+    count = robots[0].count_
+    count += robots[1].count_
+    count += robots[2].count_
+    count += robots[3].count_
+    if count > smallest:
+        robots[0] = local_robot0
+        robots[1] = local_robot1
+        robots[2] = local_robot2
+        robots[3] = local_robot3
+        # print("too large")
+        return
+
+    # print(robots[1])
+    # print("============================================")
+    # print(robots[2])
+    list = []
+    recursive2(map, mask, robots[1], 1, list, used_keys, open_doors)
+    next_list.extend(list)
+
+    count = robots[0].count_
+    count += robots[1].count_
+    count += robots[2].count_
+    count += robots[3].count_
+    if count > smallest:
+        robots[0] = local_robot0
+        robots[1] = local_robot1
+        robots[2] = local_robot2
+        robots[3] = local_robot3
+        # print("too large")
+        return
+
+    # print(robots[2])
+    # print("============================================")
+    # print(robots[3])
+    list = []
+    recursive2(map, mask, robots[0], 0, list, used_keys, open_doors)
+    next_list.extend(list)
+
+    count = robots[0].count_
+    count += robots[1].count_
+    count += robots[2].count_
+    count += robots[3].count_
+    if count > smallest:
+        robots[0] = local_robot0
+        robots[1] = local_robot1
+        robots[2] = local_robot2
+        robots[3] = local_robot3
+        # print("too large")
+        return
+
+    # print(robots[3])
+    # print("============================================")
+
+    next_list = sorted(next_list, key=lambda x: x[0])
     for entry in next_list:
         entry[2].count_ = entry[0]
         doubleRec2(map, entry[1], used_keys, open_doors, entry[2], entry[3])
@@ -318,6 +332,8 @@ def recursive2(map, mask, robot, robot_number, list, used_keys, open_doors):
     global smallest
     global robots
     c = map[robot.y_][robot.x_]
+
+    robots[robot_number] = robot
 
     count = robots[0].count_
     count += robots[1].count_
@@ -402,9 +418,10 @@ def doPart2(map):
         robots[1] = local_robot1
         robots[2] = local_robot2
         robots[3] = local_robot3
-        print("too large")
+        # print("too large")
         return
 
+    next_list = sorted(next_list, key=lambda x: x[0])
     for entry in next_list:
         entry[2].count_ = entry[0]
         doubleRec2(map, entry[1], used_keys, open_doors, entry[2], entry[3])
