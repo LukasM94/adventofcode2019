@@ -35,12 +35,15 @@ def isCrossOver(map, x, y):
     count += map[y][x - 1] == '.'
     return count > 1
 
-def goOn(map, x, y):
-    count = map[y - 1][x] == '.'
-    count += map[y][x + 1] == '.'
-    count += map[y + 1][x] == '.'
-    count += map[y][x - 1] == '.'
-    return count != 1
+def getTurns(map, x, y):
+    count = int(getValue(map, x, y - 1))
+    count += int(getValue(map, x + 1, y))
+    count += int(getValue(map, x, y + 1))
+    count += int(getValue(map, x - 1, y))
+    return count
+
+def getValue(map, x, y):
+    return map[y][x] == '.' or map[y][x] == '~'
 
 def getOtherCoordinates(portals, x, y):
     for entry in portals:
@@ -51,53 +54,66 @@ def getOtherCoordinates(portals, x, y):
             print(entry[0])
             return entry[0]
 
-point_number = 0
+# class Node:
+#     count = 0
+#     def __init__(self, x, y):
+#         self.x_ = x
+#         self.y_ = y
+#         self.number_ = Node.count
+#         Node.count += 1
+#         self.north_ = 0
+#         self.east_ = 0
+#         self.south_ = 0
+#         self.west_ = 0
+#
+#     def __init__(self, x, y, n, e, s, w):
+#         self.x_ = x
+#         self.y_ = y
+#         self.number_ = Node.count
+#         Node.count += 1
+#         self.north_ = n
+#         self.east_ = e
+#         self.south_ = s
+#         self.west_ = w
+#
+#     def __str__(self):
+#         return "node <" + str(self.number_) + ">, x <" + str(self.x_) + ">, y <" + str(self.y_) + ">, n <" + str(self.north_) + ">, e <" + str(self.east_) + ">, s <" + str(self.south_) + ">, w <" + str(self.west_) + ">"
+#
+# class Path:
+#     def __init__(self, node1, node2, distance):
+#         self.node1_ = node1
+#         self.node2_ = node2
+#         self.distance_ = distance
+
 def getList(map, x, y, count, portals):
-    global point_number
+    stack = []
+    stack.append([x, y, count])
+    turns = 0
+    while len(stack) != 0:
+        [x, y, _] = stack.pop(0)
+        if getValue(map, x, y - 1):
+            y -= 1
+        elif getValue(map, x + 1, y):
+            x += 1
+        elif getValue(map, x, y + 1):
+            y += 1
+        elif getValue(map, x - 1, y):
+            x -= 1
+        map[y][x] = '*'
+        printMap(map)
+        turns = getTurns(map, x, y)
+        while turns > 0:
+            print("append x <" + str(x) + ">, y <" + str(y) + ">, turns <" + str(turns) + ">")
+            stack.append([x, y, count])
+            turns -= 1
 
-    while goOn(map, x, y) == False:
-        map[y][x] = ','
-        # printMap(map)
-        y -= int(map[y - 1][x] == '.')
-        x += int(map[y][x + 1] == '.')
-        y += int(map[y + 1][x] == '.')
-        x -= int(map[y][x - 1] == '.')
-
-    list = []
-    # print("x <" + str(x) + ">, y <" + str(y) + ">")
-    # printMap(map)
-    if map[y][x] == '~':
-        map[y][x] = ','
-        # print("portal for x <" + str(x) + ">, y <" + str(y) + ">")
-        try:
-            [x, y] = getOtherCoordinates(portals, x, y)
-        except:
-            return []
-        count += 1
-    elif map[y][x] != '.':
-        return []
-    map[y][x] = ','
-    if isCrossOver(map, x, y):
-        list.append([[x, y],[point_number, count]])
-        point_number += 1
-    temp = getList(map, x, y - 1, count + 1, portals)
-    if temp != []:
-        list += temp
-    temp = getList(map, x + 1, y, count + 1, portals)
-    if temp != []:
-        list += temp
-    temp = getList(map, x, y + 1, count + 1, portals)
-    if temp != []:
-        list += temp
-    temp = getList(map, x - 1, y, count + 1, portals)
-    if temp != []:
-        list += temp
-    return list
+    return []
 
 def getImportantPoints(map):
     y_aa = 0
     x_aa = 0
     found = False
+    nodes = []
     for x in range(len(map[0])):
         if map[0][x] == 'A' and map[1][x] == 'A':
             x_aa = x
@@ -113,6 +129,8 @@ def getImportantPoints(map):
                 map[y][0] = ' '
                 map[y][1] = ' '
 
+    # nodes.append(Node(x_aa, y_aa, 0, 0, 1, 0))
+
     portals = []
     temp_portals = {}
 
@@ -125,8 +143,10 @@ def getImportantPoints(map):
                 y_portal = y
                 if x == 0 or map[y][x + 2] == '.':
                     x_portal = x + 2
+                    # nodes.append(Node(x_portal, y_portal, 0, 0, 1, 0))
                 else:
                     x_portal = x - 1
+                    # nodes.append(Node(x_portal, y_portal, 1, 0, 0, 0))
                 map[y_portal][x_portal] = '~'
                 name = ''.join(sorted(first + second))
                 if name not in temp_portals:
@@ -144,8 +164,10 @@ def getImportantPoints(map):
                 y_portal = -1
                 if y == 0 or map[y + 2][x] == '.':
                     y_portal = y + 2
+                    # nodes.append(Node(x_portal, y_portal, 0, 1, 0, 0))
                 else:
                     y_portal = y - 1
+                    # nodes.append(Node(x_portal, y_portal, 0, 0, 0, 1))
                 map[y_portal][x_portal] = '~'
                 name = ''.join(sorted(first + second))
                 if name not in temp_portals:
@@ -158,6 +180,8 @@ def getImportantPoints(map):
                     list.append(name)
                     portals.append(list)
 
+    # for node in nodes:
+    #     print(node)
     print(portals)
     return getList(map, x_aa, y_aa, 0, portals)
 
