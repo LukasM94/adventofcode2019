@@ -75,12 +75,12 @@ def getList(map, x, y, count, portals):
     level = 0
     # default_map = copyMap(map)
     maps = []
-    for i in range(100):
+    for i in range(500):
         maps.append(copyMap(map))
     while len(stack) != 0:
         [x, y, count, level] = stack.pop(0)
         map = maps[level]
-        print("x <" + str(x) + ">, y <" + str(y) + ">")
+        # print("x <" + str(x) + ">, y <" + str(y) + ">")
 
         if map[y][x] == '~':
             count += 1
@@ -97,11 +97,11 @@ def getList(map, x, y, count, portals):
         elif getValue(map, x - 1, y):
             count += 1
             x -= 1
-        print("count <" + str(count) + ">, level <" + str(level) + ">")
-        old = map[y][x]
-        map[y][x] = 'x'
-        printMap(map)
-        map[y][x] = old
+        # print("count <" + str(count) + ">, level <" + str(level) + ">")
+        # old = map[y][x]
+        # map[y][x] = 'x'
+        # printMap(map)
+        # map[y][x] = old
 
         if isPortal(map, x, y):
             map[y][x] = 'i'
@@ -153,7 +153,8 @@ def getImportantPoints(map):
                 map[y_portal][x_portal] = '~'
                 # print(name)
                 # printMap(map)
-                if x_portal == 2 or x_portal == len(map) - 4 or y_portal == 2 or y_portal == len(map) - 4:
+                t = []
+                if x_portal == 2 or x_portal == len(map[0]) - 4 or y_portal == 2 or y_portal == len(map) - 4:
                     t = [x_portal, y_portal, 1]
                 else:
                     t = [x_portal, y_portal, -1]
