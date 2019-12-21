@@ -19,6 +19,7 @@ def getInput(p):
             if i == 10:
                 break
         except:
+            print("solution is " + str(i))
             break
     if len(string) > 1:
         string = string[:-1]
