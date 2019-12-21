@@ -13,13 +13,15 @@ def handleInput(p):
 def getInput(p):
     string = []
     while True:
+        i = -1
         try:
             i = int(p.stdout.readline())
             string.append(chr(i))
             if i == 10:
                 break
         except:
-            print("solution is " + str(i))
+            if i != -1:
+                print("solution is " + str(i))
             break
     if len(string) > 1:
         string = string[:-1]
