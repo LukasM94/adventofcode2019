@@ -45,7 +45,10 @@ def getTurns(map, x, y):
 def getValue(map, x, y):
     return map[y][x] == '.' or map[y][x] == '~'
 
-def getOtherCoordinates(portals, x, y):
+def isPortal(map, x, y):
+    return map[y][x] == '~'
+
+def goThroughPortal(portals, x, y):
     for entry in portals:
         if [x, y] == entry[0]:
             print(entry[1])
@@ -53,6 +56,7 @@ def getOtherCoordinates(portals, x, y):
         elif [x, y] == entry[1]:
             print(entry[0])
             return entry[0]
+    return []
 
 # class Node:
 #     count = 0
@@ -88,24 +92,47 @@ def getOtherCoordinates(portals, x, y):
 def getList(map, x, y, count, portals):
     stack = []
     stack.append([x, y, count])
+    map[y][x] = '*'
     turns = 0
     while len(stack) != 0:
-        [x, y, _] = stack.pop(0)
-        if getValue(map, x, y - 1):
+        [x, y, count] = stack.pop(0)
+
+        if map[y][x] == 'i':
+            next = goThroughPortal(portals, x, y)
+            if next == []:
+                print(count)
+                exit()
+            count += 1
+            [x, y] = next
+            map[y][x] = 'u'
+        elif getValue(map, x, y - 1):
+            count += 1
             y -= 1
         elif getValue(map, x + 1, y):
+            count += 1
             x += 1
         elif getValue(map, x, y + 1):
+            count += 1
             y += 1
         elif getValue(map, x - 1, y):
+            count += 1
             x -= 1
-        map[y][x] = '*'
-        printMap(map)
-        turns = getTurns(map, x, y)
-        while turns > 0:
-            print("append x <" + str(x) + ">, y <" + str(y) + ">, turns <" + str(turns) + ">")
+        # print("count <" + str(count) + ">")
+        # old = map[y][x]
+        # map[y][x] = 'x'
+        # printMap(map)
+        # map[y][x] = old
+
+        if isPortal(map, x, y):
+            map[y][x] = 'i'
             stack.append([x, y, count])
-            turns -= 1
+        else:
+            map[y][x] = '*'
+            turns = getTurns(map, x, y)
+            while turns > 0:
+                # print("append x <" + str(x) + ">, y <" + str(y) + ">, turns <" + str(turns) + ">")
+                stack.append([x, y, count])
+                turns -= 1
 
     return []
 
@@ -148,11 +175,12 @@ def getImportantPoints(map):
                     x_portal = x - 1
                     # nodes.append(Node(x_portal, y_portal, 1, 0, 0, 0))
                 map[y_portal][x_portal] = '~'
+                # print("portal at x <" + str(x_portal) + ">, y <" + str(y_portal) + ">")
                 name = ''.join(sorted(first + second))
+                # print(name)
                 if name not in temp_portals:
                     temp_portals[name] = [x_portal, y_portal]
                 else:
-                    coordinates = str(1000 * x + y)
                     list = []
                     list.append(temp_portals[name])
                     list.append([x_portal, y_portal])
@@ -169,11 +197,12 @@ def getImportantPoints(map):
                     y_portal = y - 1
                     # nodes.append(Node(x_portal, y_portal, 0, 0, 0, 1))
                 map[y_portal][x_portal] = '~'
+                # print("portal at x <" + str(x_portal) + ">, y <" + str(y_portal) + ">")
                 name = ''.join(sorted(first + second))
+                # print(name)
                 if name not in temp_portals:
                     temp_portals[name] = [x_portal, y_portal]
                 else:
-                    coordinates = str(1000 * x + y)
                     list = []
                     list.append(temp_portals[name])
                     list.append([x_portal, y_portal])
