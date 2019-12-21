@@ -48,62 +48,42 @@ def getValue(map, x, y):
 def isPortal(map, x, y):
     return map[y][x] == '~'
 
-def goThroughPortal(portals, x, y):
+def goThroughPortal(map, portals, x, y):
     for entry in portals:
-        if [x, y] == entry[0]:
+        if [x, y] == entry[0][0:2]:
             print(entry[1])
             return entry[1]
-        elif [x, y] == entry[1]:
+        elif [x, y] == entry[1][0:2]:
             print(entry[0])
             return entry[0]
     return []
 
-# class Node:
-#     count = 0
-#     def __init__(self, x, y):
-#         self.x_ = x
-#         self.y_ = y
-#         self.number_ = Node.count
-#         Node.count += 1
-#         self.north_ = 0
-#         self.east_ = 0
-#         self.south_ = 0
-#         self.west_ = 0
-#
-#     def __init__(self, x, y, n, e, s, w):
-#         self.x_ = x
-#         self.y_ = y
-#         self.number_ = Node.count
-#         Node.count += 1
-#         self.north_ = n
-#         self.east_ = e
-#         self.south_ = s
-#         self.west_ = w
-#
-#     def __str__(self):
-#         return "node <" + str(self.number_) + ">, x <" + str(self.x_) + ">, y <" + str(self.y_) + ">, n <" + str(self.north_) + ">, e <" + str(self.east_) + ">, s <" + str(self.south_) + ">, w <" + str(self.west_) + ">"
-#
-# class Path:
-#     def __init__(self, node1, node2, distance):
-#         self.node1_ = node1
-#         self.node2_ = node2
-#         self.distance_ = distance
+def copyMap(map):
+    m = []
+    for line in map:
+        s = []
+        for c in line:
+            s.append(c)
+        m.append(s)
+    return m
 
 def getList(map, x, y, count, portals):
     stack = []
-    stack.append([x, y, count])
+    stack.append([x, y, count, 0])
     map[y][x] = '*'
     turns = 0
+    level = 0
+    # default_map = copyMap(map)
+    maps = []
+    for i in range(100):
+        maps.append(copyMap(map))
     while len(stack) != 0:
-        [x, y, count] = stack.pop(0)
+        [x, y, count, level] = stack.pop(0)
+        map = maps[level]
+        print("x <" + str(x) + ">, y <" + str(y) + ">")
 
-        if map[y][x] == 'i':
-            next = goThroughPortal(portals, x, y)
-            if next == []:
-                print(count)
-                exit()
+        if map[y][x] == '~':
             count += 1
-            [x, y] = next
             map[y][x] = 'u'
         elif getValue(map, x, y - 1):
             count += 1
@@ -117,21 +97,33 @@ def getList(map, x, y, count, portals):
         elif getValue(map, x - 1, y):
             count += 1
             x -= 1
-        # print("count <" + str(count) + ">")
-        # old = map[y][x]
-        # map[y][x] = 'x'
-        # printMap(map)
-        # map[y][x] = old
+        print("count <" + str(count) + ">, level <" + str(level) + ">")
+        old = map[y][x]
+        map[y][x] = 'x'
+        printMap(map)
+        map[y][x] = old
 
         if isPortal(map, x, y):
             map[y][x] = 'i'
-            stack.append([x, y, count])
+            next = goThroughPortal(map, portals, x, y)
+            if next == []:
+                if level != 0:
+                    continue
+                for portal in portals:
+                    print(portal)
+                printMap(map)
+                print(count)
+                exit()
+            else:
+                [x, y, lvl] = next
+                level += lvl
+            if level >= 0:
+                stack.append([x, y, count, level])
         else:
             map[y][x] = '*'
             turns = getTurns(map, x, y)
             while turns > 0:
-                # print("append x <" + str(x) + ">, y <" + str(y) + ">, turns <" + str(turns) + ">")
-                stack.append([x, y, count])
+                stack.append([x, y, count, level])
                 turns -= 1
 
     return []
@@ -141,22 +133,6 @@ def getImportantPoints(map):
     x_aa = 0
     found = False
     nodes = []
-    for x in range(len(map[0])):
-        if map[0][x] == 'A' and map[1][x] == 'A':
-            x_aa = x
-            y_aa = 2
-            found = True
-            map[0][x] = ' '
-            map[1][x] = ' '
-    if found == False:
-        for y in range(len(map)):
-            if map[y][0] == 'A' and map[y][1] == 'A':
-                x_aa = 2
-                y_aa = y
-                map[y][0] = ' '
-                map[y][1] = ' '
-
-    # nodes.append(Node(x_aa, y_aa, 0, 0, 1, 0))
 
     portals = []
     temp_portals = {}
@@ -170,20 +146,23 @@ def getImportantPoints(map):
                 y_portal = y
                 if x == 0 or map[y][x + 2] == '.':
                     x_portal = x + 2
-                    # nodes.append(Node(x_portal, y_portal, 0, 0, 1, 0))
                 else:
                     x_portal = x - 1
-                    # nodes.append(Node(x_portal, y_portal, 1, 0, 0, 0))
-                map[y_portal][x_portal] = '~'
                 # print("portal at x <" + str(x_portal) + ">, y <" + str(y_portal) + ">")
                 name = ''.join(sorted(first + second))
+                map[y_portal][x_portal] = '~'
                 # print(name)
+                # printMap(map)
+                if x_portal == 2 or x_portal == len(map) - 4 or y_portal == 2 or y_portal == len(map) - 4:
+                    t = [x_portal, y_portal, 1]
+                else:
+                    t = [x_portal, y_portal, -1]
                 if name not in temp_portals:
-                    temp_portals[name] = [x_portal, y_portal]
+                    temp_portals[name] = t
                 else:
                     list = []
                     list.append(temp_portals[name])
-                    list.append([x_portal, y_portal])
+                    list.append(t)
                     list.append(name)
                     portals.append(list)
             second = map[y + 1][x]
@@ -192,26 +171,34 @@ def getImportantPoints(map):
                 y_portal = -1
                 if y == 0 or map[y + 2][x] == '.':
                     y_portal = y + 2
-                    # nodes.append(Node(x_portal, y_portal, 0, 1, 0, 0))
                 else:
                     y_portal = y - 1
-                    # nodes.append(Node(x_portal, y_portal, 0, 0, 0, 1))
-                map[y_portal][x_portal] = '~'
                 # print("portal at x <" + str(x_portal) + ">, y <" + str(y_portal) + ">")
                 name = ''.join(sorted(first + second))
+                map[y_portal][x_portal] = '~'
                 # print(name)
+                # printMap(map)
+                t = []
+                if x_portal == 2 or x_portal == len(map) - 4 or y_portal == 2 or y_portal == len(map) - 4:
+                    t = [x_portal, y_portal, 1]
+                else:
+                    t = [x_portal, y_portal, -1]
                 if name not in temp_portals:
-                    temp_portals[name] = [x_portal, y_portal]
+                    temp_portals[name] = t
                 else:
                     list = []
                     list.append(temp_portals[name])
-                    list.append([x_portal, y_portal])
+                    list.append(t)
                     list.append(name)
                     portals.append(list)
+    [x_aa, y_aa, _ ] = temp_portals['AA']
+    map[y_aa][x_aa] = '.'
+    [x_zz, y_zz, _ ] = temp_portals['ZZ']
 
-    # for node in nodes:
-    #     print(node)
-    print(portals)
+    printMap(map)
+    print("start at x <" + str(x_aa) + ">, y <" + str(y_aa) + ">")
+    for entry in portals:
+        print(entry)
     return getList(map, x_aa, y_aa, 0, portals)
 
 def main():
