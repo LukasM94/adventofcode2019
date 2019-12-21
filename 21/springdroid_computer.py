@@ -41,7 +41,7 @@ def handleInstructions(p):
         instr = raw_input('')
         try:
             instructions.append(instr + '\n')
-            if instr == 'WALK':
+            if instr == 'WALK' or instr == 'RUN':
                 break
         except:
             print("error")
