@@ -3,21 +3,34 @@ from subprocess import Popen, PIPE, STDOUT
 import os
 import sys
 
-def pipe(p):
-    i = p.stdout.readline()
-    print(i)
-    # while True:
-    #     try:
-    #     except:
-    #         return
+def handleInput(p):
+    while True:
+        i = getInput(p)
+        if i == '':
+            break
+        print(i)
+
+def getInput(p):
+    string = []
+    while True:
+        try:
+            i = int(p.stdout.readline())
+            string.append(chr(i))
+            if i == 10:
+                break
+        except:
+            break
+    if len(string) > 1:
+        string = string[:-1]
+    return ''.join(string)
 
 def start(p, instructions):
     while len(instructions) > 0:
         instr = instructions.pop(0)
-        # print(instr)
+        print(instr[:-1])
         for c in instr:
-            print(ord(c))
-            p.stdin.write(c)
+            # print(ord(c))
+            p.stdin.write(str(ord(c)) + '\n')
 
 def handleInstructions(p):
     instructions = []
@@ -51,7 +64,7 @@ def main():
     handlePromp(p)
     instructions = handleInstructions(p)
     start(p, instructions)
-    pipe(p)
+    handleInput(p)
 
 if __name__ == "__main__":
     main()
