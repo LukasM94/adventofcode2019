@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 import sys
+from ecdsa import SigningKey, VerifyingKey, BadSignatureError, NIST256p, NIST192p
+from ecdsa.numbertheory import inverse_mod
 
 number_of_cards = 0
 
@@ -63,6 +65,28 @@ def handleCmds(cards, cmds):
         print("do not know the command")
     return handleCmds(cards, cmds)
 
+def handleCmdsPart2(number, length, cmds):
+    if len(cmds) == 0:
+        return number
+    cmd = cmds.pop(0)
+    if cmd[0] == "cut":
+        n = int(cmd[1])
+        number = number + n
+        number = number % length
+    elif cmd[0] == "deal":
+        if cmd[1] == "with" and cmd[2] == "increment":
+            n = int(cmd[3])
+            n = inverse_mod(n, length)
+            number = number * n
+            number = number % length
+        elif cmd[1] == "into" and cmd[2] == "new" and cmd[3] == "stack":
+            number = length - number - 1
+        else:
+            print("do not know the command")
+    else:
+        print("do not know the command")
+    return handleCmdsPart2(number, length, cmds)
+
 def main():
     global number_of_cards
     global TESTING
@@ -75,12 +99,19 @@ def main():
     cards = getCards()
     cmds = readInput()
     cards = handleCmds(cards, cmds)
-    if TESTING == True:
-        print("Result is " + str(cards))
-    else:
-        for i in range(len(cards)):
-            if cards[i] == 2019:
-                print("2019 card is at position " + str(i))
+    print(cards[2020])
+    cards = getCards()
+    cmds = readInput()
+    cmds.reverse()
+    # if TESTING == True:
+    #     print("Result is " + str(cards))
+    # else:
+        # for i in range(len(cards)):
+        #     if cards[i] == 2019:
+        #         print("2019 card is at position " + str(i))
+    number = handleCmdsPart2(2020, len(cards), cmds)
+    print(number)
+
 
 if __name__ == "__main__":
     main()
