@@ -89,18 +89,19 @@ def handleCmdsPart2(number, length, cmds):
 
 def main():
     global number_of_cards
-    global TESTING
-    if len(sys.argv) > 1 and sys.argv[1] == "TEST":
-        number_of_cards = 10
-        TESTING = True
-    else:
-        number_of_cards = 10007
-        TESTING = False
-    cards = getCards()
-    cmds = readInput()
-    cards = handleCmds(cards, cmds)
-    print(cards[2020])
-    cards = getCards()
+    # global TESTING
+    # if len(sys.argv) > 1 and sys.argv[1] == "TEST":
+    #     number_of_cards = 10
+    #     TESTING = True
+    # else:
+    #     number_of_cards = 10007
+    #     TESTING = False
+    # cards = getCards()
+    # cmds = readInput()
+    # cards = handleCmds(cards, cmds)
+    # print(cards[2020])
+    number_of_cards = 119315717514047
+    # cards = getCards()
     cmds = readInput()
     cmds.reverse()
     # if TESTING == True:
@@ -109,7 +110,8 @@ def main():
         # for i in range(len(cards)):
         #     if cards[i] == 2019:
         #         print("2019 card is at position " + str(i))
-    number = handleCmdsPart2(2020, len(cards), cmds)
+    number = 2020
+    number = handleCmdsPart2(number, 119315717514047, cmds)
     print(number)
 
 
