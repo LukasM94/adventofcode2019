@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 
-number_of_cards = 10
+import sys
+
+number_of_cards = 0
 
 def getCards():
     global number_of_cards
     cards = []
     for i in range(number_of_cards):
         cards.append(i)
+    return cards
 
 def readInput():
     file = open("input", "r")
@@ -15,31 +18,39 @@ def readInput():
         cmds.append(line.split())
     return cmds
 
-def cutPositiv(number, cards):
-    return []
-
-def cutNegativ(number, cards):
-    return []
+def cut(number, cards):
+    first_cards = cards[:number]
+    second_cards = cards[number:]
+    cards = second_cards + first_cards
+    return cards
 
 def dealWithIncrement(number, cards):
-    return []
+    global number_of_cards
+    temp_cards = []
+    for i in range(number_of_cards):
+        temp_cards.append([])
+    for i in range(number_of_cards):
+        temp_i = i * number
+        temp_i = temp_i % number_of_cards
+        temp_cards[temp_i].append(cards[i])
+    cards = []
+    for entry in temp_cards:
+        cards += entry
+    return cards
 
 def dealIntoNewStack(cards):
-    return []
+    cards.reverse()
+    return cards
 
 def handleCmds(cards, cmds):
     if len(cmds) == 0:
         return cards
     cmd = cmds.pop(0)
-    print("command is " + str(cmd))
+    # print("cards are  " + str(cards))
+    # print("command is " + str(cmd))
     if cmd[0] == "cut":
-        number = int(cmds[1])
-        if number > 0:
-            cards = cutPositiv(number, cards)
-        elif number < 0:
-            cards = cutNegativ(number, cards)
-        else:
-            print("0 is not allowed")
+        number = int(cmd[1])
+        cards = cut(number, cards)
     elif cmd[0] == "deal":
         if cmd[1] == "with" and cmd[2] == "increment":
             number = int(cmd[3])
@@ -53,10 +64,23 @@ def handleCmds(cards, cmds):
     return handleCmds(cards, cmds)
 
 def main():
+    global number_of_cards
+    global TESTING
+    if len(sys.argv) > 1 and sys.argv[1] == "TEST":
+        number_of_cards = 10
+        TESTING = True
+    else:
+        number_of_cards = 10007
+        TESTING = False
     cards = getCards()
     cmds = readInput()
     cards = handleCmds(cards, cmds)
-    print("Result is " + str(cards))
+    if TESTING == True:
+        print("Result is " + str(cards))
+    else:
+        for i in range(len(cards)):
+            if cards[i] == 2019:
+                print("2019 card is at position " + str(i))
 
 if __name__ == "__main__":
     main()
