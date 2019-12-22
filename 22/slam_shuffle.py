@@ -104,6 +104,7 @@ def main():
     # cards = getCards()
     cmds = readInput()
     cmds.reverse()
+    temp_cmds = cmds.copy()
     # if TESTING == True:
     #     print("Result is " + str(cards))
     # else:
@@ -111,8 +112,21 @@ def main():
         #     if cards[i] == 2019:
         #         print("2019 card is at position " + str(i))
     number = 2020
-    number = handleCmdsPart2(number, 119315717514047, cmds)
-    print(number)
+    i = 0
+    list = []
+    for i in range(10):
+        temp_cmds = cmds.copy()
+        number = handleCmdsPart2(number, number_of_cards, temp_cmds)
+        if number in list:
+            file = open("out", "w+")
+            for entry in list:
+                file.write(str(entry) + '\n')
+                file.close()
+            print("won")
+            print("current i " + str(i) + ", number is " + str(number))
+            exit()
+        list.append(number)
+    print("current i " + str(i) + ", number is " + str(number))
 
 
 if __name__ == "__main__":
