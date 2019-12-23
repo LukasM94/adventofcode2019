@@ -11,6 +11,7 @@ ON_POSIX = 'posix' in sys.builtin_module_names
 computers = 50
 goal_address = 255
 no_input = -1
+nat = []
 
 def initProcesses():
     global computers
@@ -62,6 +63,7 @@ def writeToComputers(list_of_p, input_queue):
 def redirectPackets(input_queue, output_queue):
     print("redirectPackets")
     global computers
+    global nat
     for i in range(computers):
         q = output_queue[i]
         try:
@@ -73,18 +75,44 @@ def redirectPackets(input_queue, output_queue):
                 y = int(q.get_nowait())
                 # print("y <" + str(y) + ">")
                 if pid == 255:
-                    print("goal " + str(y))
-                    exit()
+                    if nat != [] and nat[1] == y:
+                        print("naty is " + str(y))
+                    nat = [x, y]
+                    break
                 print("pid <" + str(pid) + ">, x <" + str(x) + ">, y <" + str(y) + ">")
                 input_queue[pid].append(x)
                 input_queue[pid].append(y)
         except:
             continue
 
+def natSentPackage(input_queue):
+    global nat
+    print("natSentPackage: x <" + str(nat[0]) + ">, y <" + str(nat[1]) + ">")
+    input_queue[0].append(nat[0])
+    input_queue[0].append(nat[1])
+
+count = 0
+
+def isIdle(input_queue):
+    global count
+    for entry in input_queue:
+        if entry != []:
+            return False
+    for entry in input_queue:
+        print(entry)
+    if count == 10:
+        print("is idle")
+        count = 0
+        return True
+    count += 1
+
 def handlePart1(list_of_p, input_queue, output_queue):
     while True:
         redirectPackets(input_queue, output_queue)
-        writeToComputers(list_of_p, input_queue)
+        if isIdle(input_queue) == True:
+            natSentPackage(input_queue)
+        else:
+            writeToComputers(list_of_p, input_queue)
         time.sleep(0.01)
 
 def main():
