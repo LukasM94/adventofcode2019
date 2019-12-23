@@ -87,6 +87,12 @@ def handleCmdsPart2(number, length, cmds):
         print("do not know the command")
     return handleCmdsPart2(number, length, cmds)
 
+def getNumber(number, a, b, k, number_of_cards):
+    b_power_of_number_of_cards = pow(b, k, number_of_cards)
+    sum = (b_power_of_number_of_cards - 1) * inverse_mod(b - 1, number_of_cards) % number_of_cards
+    number = (number * b_power_of_number_of_cards + a * sum) % number_of_cards
+    return number
+
 def main():
     global number_of_cards
     # global TESTING
@@ -114,20 +120,35 @@ def main():
     number = 2020
     i = 0
     list = []
-    for i in range(10):
-        temp_cmds = cmds.copy()
-        number = handleCmdsPart2(number, number_of_cards, temp_cmds)
-        if number in list:
-            file = open("out", "w+")
-            for entry in list:
-                file.write(str(entry) + '\n')
-                file.close()
-            print("won")
-            print("current i " + str(i) + ", number is " + str(number))
-            exit()
-        list.append(number)
-    print("current i " + str(i) + ", number is " + str(number))
-
+    temp_cmds = cmds.copy()
+    second_number = handleCmdsPart2(number, number_of_cards, temp_cmds)
+    temp_cmds = cmds.copy()
+    third_number = handleCmdsPart2(second_number, number_of_cards, temp_cmds)
+    temp_cmds = cmds.copy()
+    fourth_number = handleCmdsPart2(third_number, number_of_cards, temp_cmds)
+    print("number is " + str(number))
+    print("second number is " + str(second_number))
+    print("third number is " + str(third_number))
+    # next_number = number * b + a
+    #  b = (number - next_number)^-1 * (next_number - next_next_number) % mod number_of_cards
+    #  b = x^-1 * y mod number_of_cards
+    #  a = next_number - number * b
+    x = number - second_number
+    inv_x = inverse_mod(x, number_of_cards)
+    y = second_number - third_number
+    b = (inv_x * y) % number_of_cards
+    a = (second_number - number * b) % number_of_cards
+    test_number = (third_number * b + a) % number_of_cards
+    print("test_number is   " + str(test_number))
+    print("fourth_number is " + str(fourth_number))
+    # test passed :-)
+    test_number = getNumber(number, a, b, 3, number_of_cards)
+    print("test_number is   " + str(test_number))
+    print("fourth_number is " + str(fourth_number))
+    # test passed :-)
+    shuffles = 101741582076661
+    final_number = getNumber(number, a, b, shuffles, number_of_cards)
+    print("number after " + str(shuffles) + " shuffles is " + str(final_number))
 
 if __name__ == "__main__":
     main()
