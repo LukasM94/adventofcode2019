@@ -22,13 +22,17 @@ def countNeighbour(map, x, y):
     count += int((x - 1) >= 0 and map[y][x - 1] == '#')
     return count
 
+def copyMap(map):
+    copy_map = []
+    for line in map:
+        copy_line = line.copy()
+        copy_map.append(copy_line)
+    return copy_map
+
 def doStep(map):
     global counter
     counter += 1
-    next_map = []
-    for line in map:
-        next_line = line.copy()
-        next_map.append(next_line)
+    next_map = copyMap(map)
     for y in range(len(map)):
         for x in range(len(map[0])):
             count = countNeighbour(map, x, y)
@@ -37,8 +41,7 @@ def doStep(map):
                 next_map[y][x] = '.'
             elif map[y][x] == '.' and (count == 1 or count == 2):
                 next_map[y][x] = '#'
-    return next_map
-
+    return next_ma
 def getValue(map):
     value = 1
     result = 0
@@ -70,9 +73,23 @@ def doPart1(map):
             print("value is " + str(value))
             break
 
+def doStep2(maps):
+    count = (len(maps) + 1) / 2
+
+def doPart2(map):
+    maps = {}
+    copy_map = copyMap(map)
+    maps[0] = copy_map
+    print("===================")
+    print("init")
+    printMap(map)
+    for i in range(10):
+        doStep2(maps)
+
 def main():
     map = readInput()
-    doPart1(map)
+    # doPart1(map)
+    doPart2(map)
 
 if __name__ == "__main__":
     main()
