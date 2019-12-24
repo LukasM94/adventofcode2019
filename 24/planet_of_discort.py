@@ -5,6 +5,7 @@ def readInput():
     file = open("input", "r")
     for line in file:
         map.append(list(line[:-1]))
+    map[2][2] = '?'
     return map
 
 counter = 0
@@ -41,7 +42,8 @@ def doStep(map):
                 next_map[y][x] = '.'
             elif map[y][x] == '.' and (count == 1 or count == 2):
                 next_map[y][x] = '#'
-    return next_ma
+    return next_map
+
 def getValue(map):
     value = 1
     result = 0
@@ -73,18 +75,42 @@ def doPart1(map):
             print("value is " + str(value))
             break
 
-def doStep2(maps):
-    count = (len(maps) + 1) / 2
+def getZeroMap(map):
+    zero_map = []
+    for y in range(len(map)):
+        zero_map.append(list(len(map[0]) * '.'))
+    zero_map[2][2] = '?'
+    return zero_map
+
+def doStep2(maps, map):
+    global counter
+    if counter % 2 == 1:
+        count = (len(maps) + 1) / 2
+        maps.append([count, getZeroMap(map)])
+        count *= -1
+        maps.append([count, getZeroMap(map)])
+
+def printMaps(maps):
+    maps = sorted(maps, key=lambda x: x[0], reverse=False)
+    for entry in maps:
+        print("Depth " + str(entry[0]))
+        printMap(entry[1])
 
 def doPart2(map):
-    maps = {}
+    global counter
+    maps = []
     copy_map = copyMap(map)
-    maps[0] = copy_map
+    maps.append([0, copy_map])
     print("===================")
     print("init")
     printMap(map)
-    for i in range(10):
-        doStep2(maps)
+    counter += 1
+    for i in range(3):
+        print("===================")
+        print("after " + str(counter) + " minutes")
+        doStep2(maps, map)
+        printMaps(maps)
+        counter += 1
 
 def main():
     map = readInput()
