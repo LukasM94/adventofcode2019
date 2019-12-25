@@ -12,15 +12,6 @@ ON_POSIX = 'posix' in sys.builtin_module_names
 map = []
 x = 0
 y = 0
-list = [
-    "space law space brochure",
-    "fixed point",
-    "candy cane",
-    "sand",
-    "ornament",
-    "fuel cell",
-    "wreath"
-]
 
 def enqueueOutput(stdout, queue):
     for line in iter(stdout.readline, ''):
