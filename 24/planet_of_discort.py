@@ -127,14 +127,14 @@ def changeBugs(maps, i):
                     count += int(neighbour_map[3][4] == "#")
                     count += int(neighbour_map[4][4] == "#")
             count += countNeighbour(map, x, y)
-            print("i <" + str(i) + ">, depth <" + str(maps[i][0]) + ">, x <" + str(x) + ">, y <" + str(y) + ">, count <" + str(count) + ">")
+            # print("i <" + str(i) + ">, depth <" + str(maps[i][0]) + ">, x <" + str(x) + ">, y <" + str(y) + ">, count <" + str(count) + ">")
             if map[y][x] == '#' and count != 1:
                 next_map[y][x] = '.'
             elif map[y][x] == '.' and (count == 1 or count == 2):
                 next_map[y][x] = '#'
-    printMap(map)
-    print("===========")
-    printMap(next_map)
+    # printMap(map)
+    # print("===========")
+    # printMap(next_map)
     return next_map
 
 def doStep2(maps):
@@ -168,12 +168,13 @@ def doPart2(map):
     print("init")
     printMap(map)
     counter += 1
-    for i in range(10):
-        print("===================")
-        print("after " + str(counter) + " minutes")
+    for i in range(200):
         maps = doStep2(maps)
-        printMaps(maps)
+        # print("===================")
+        # print("after " + str(counter) + " minutes")
+        # printMaps(maps)
         counter += 1
+    # printMaps(maps)
     print("count of bugs is " + str(countBugs(maps)))
 
 def countBugs(maps):
