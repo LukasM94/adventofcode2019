@@ -16,6 +16,7 @@ take fixed point
 west
 north
 north
+take spool of cat6
 south
 south
 south
@@ -72,4 +73,17 @@ north
 south
 west
 inv
+west
+drop space law space brochure
+drop fixed point
+drop candy cane
+drop sand
+drop ornament
+drop fuel cell
+drop wreath
+drop spool of cat6
+take fixed point
+take sand
+take space law space brochure
+take wreath
 west

@@ -7,7 +7,8 @@ list = [
     "sand",
     "ornament",
     "fuel cell",
-    "wreath"
+    "wreath",
+    "spool of cat6"
 ]
 
 res = []
@@ -19,14 +20,27 @@ for a in range(len(list)):
         for c in range(len(list)):
             if c == b or c == a:
                 continue
-            temp = sorted([list[a], list[b], list[c]])
-            if temp not in res:
-                res.append(temp)
+            for d in range(len(list)):
+                if d == c or d == b or d == a:
+                    continue
 
-        temp = sorted([list[a], list[b]])
+                temp = [list[a], list[b], list[c], list[d]]
+                temp = sorted(temp)
+                if temp not in res:
+                    res.append(temp)
+
+        temp = [list[a], list[b], list[c]]
+        temp = sorted(temp)
         if temp not in res:
             res.append(temp)
-    temp = sorted([list[a]])
+
+        temp = [list[a], list[b]]
+        temp = sorted(temp)
+        if temp not in res:
+            res.append(temp)
+
+    temp = [list[a]]
+    temp = sorted(temp)
     if temp not in res:
         res.append(temp)
 
