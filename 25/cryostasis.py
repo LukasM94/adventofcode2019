@@ -91,13 +91,13 @@ def doPart1(q_in, q_out):
     while True:
         try:
             handleInput(q_in)
-            printMap()
+            # printMap()
             cmd = getCmd()
             # file.write(cmd)
             # file.flush()
             handleOutput(q_out, cmd)
         except:
-            file.close
+            # file.close
             exit()
 
 def printMap():
